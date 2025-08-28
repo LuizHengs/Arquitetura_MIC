@@ -1,0 +1,84 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.mic1_pkg.all;
+
+-- Registradores + B-mux (apenas o que o datapath precisa)
+entity mic1_regs_core is
+  port (
+    clk, rst : in  std_logic;
+
+    -- controles de escrita (C-bus)
+    enH, enOPC, enTOS, enCPP, enLV, enSP, enPC, enMDR, enMAR : in std_logic;
+
+    -- seleção do B-bus (ONE-HOT: exatamente 1 ativo)
+    bsel_oh : in std_logic_vector(9 downto 0);
+
+    -- interface "memória" (apenas registro MBR/MDR)
+    FETCH  : in std_logic;   -- MBR <= MBR_in
+    READ   : in std_logic;   -- MDR <= MDR_in
+    MBR_in : in byte_u;
+    MDR_in : in word_u;
+
+    -- interconexões com ULA/SHIFTER
+    H_out : out word_s;      -- A da ULA (conteúdo de H)
+    B_out : out word_s;      -- B-bus (fonte selecionada pela UC)
+    C_in  : in  word_s       -- C-bus vindo do shifter (escrita nos regs)
+  );
+end entity;
+
+architecture rtl of mic1_regs_core is
+  -- registradores internos (assinados p/ facilitar A + B etc.)
+  signal H, TOS, OPC, LV, CPP : word_s := (others=>'0');
+  signal PC_s, SP_s           : word_s := (others=>'0');
+  signal MAR_u, MDR_u         : word_u := (others=>'0');
+  signal MBR_u                : byte_u := (others=>'0');
+
+  signal Bbus : word_s;
+begin
+  -- H alimenta diretamente a entrada A da ULA
+  H_out <= H;
+
+  -- (opcional) checagem one-hot em simulação
+  assert popcount(bsel_oh) = 1
+    report "BSEL one-hot: deve haver exatamente 1 fonte ativa" severity warning;
+
+  -- B-mux (equivalente aos tri-states do livro)
+  Bbus <= H                 when bsel_oh(B_H_i)    = '1' else
+          PC_s              when bsel_oh(B_PC_i)   = '1' else
+          signed(MDR_u)     when bsel_oh(B_MDR_i)  = '1' else
+          sext8(MBR_u)      when bsel_oh(B_MBRs_i) = '1' else
+          zext8(MBR_u)      when bsel_oh(B_MBRu_i) = '1' else
+          SP_s              when bsel_oh(B_SP_i)   = '1' else
+          LV                when bsel_oh(B_LV_i)   = '1' else
+          CPP               when bsel_oh(B_CPP_i)  = '1' else
+          TOS               when bsel_oh(B_TOS_i)  = '1' else
+          OPC               when bsel_oh(B_OPC_i)  = '1' else
+          (others => '0');
+
+  B_out <= Bbus;
+
+  -- carregamentos de "memória" e escritas vindas do C-bus
+  process(clk, rst)
+  begin
+    if rst='1' then
+      H     <= (others=>'0');  TOS  <= (others=>'0');  OPC  <= (others=>'0');
+      LV    <= (others=>'0');  CPP  <= (others=>'0');
+      PC_s  <= (others=>'0');  SP_s <= (others=>'0');
+      MAR_u <= (others=>'0');  MDR_u<= (others=>'0'); MBR_u<= (others=>'0');
+    elsif rising_edge(clk) then
+      if FETCH='1' then MBR_u <= MBR_in; end if;
+      if READ ='1' then MDR_u <= MDR_in; end if;
+
+      if enH   = '1' then H    <= C_in; end if;
+      if enOPC = '1' then OPC  <= C_in; end if;
+      if enTOS = '1' then TOS  <= C_in; end if;
+      if enCPP = '1' then CPP  <= C_in; end if;
+      if enLV  = '1' then LV   <= C_in; end if;
+      if enSP  = '1' then SP_s <= C_in; end if;
+      if enPC  = '1' then PC_s <= C_in; end if;
+      if enMAR = '1' then MAR_u<= unsigned(C_in); end if;
+      if enMDR = '1' then MDR_u<= unsigned(C_in); end if;
+    end if;
+  end process;
+end architecture;

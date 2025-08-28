@@ -1,0 +1,156 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+use work.mic1_pkg.all;  -- word_s, word_u, byte_u, bsel_t, etc.
+
+entity tb_mic1_datapath is
+end entity;
+
+architecture sim of tb_mic1_datapath is
+  -- clock
+  signal clk : std_logic := '0';
+  constant T : time := 10 ns;
+
+  -- DUT signals
+  signal rst                      : std_logic := '0';
+  signal enH, enOPC, enTOS, enCPP : std_logic := '0';
+  signal enLV, enSP, enPC, enMDR, enMAR : std_logic := '0';
+
+  signal bsel_slv : std_logic_vector(3 downto 0) := (others=>'0');
+
+  signal F0, F1, ENA, ENB, INVA, INC : std_logic := '0';
+  signal SLL8, SRA1 : std_logic := '0';
+
+  signal FETCH, READ : std_logic := '0';
+  signal MBR_in : byte_u := (others=>'0');
+  signal MDR_in : word_u := (others=>'0');
+
+  signal MAR_out, MDR_out, PC_out, SP_out : word_u;
+  signal TOS_out : word_s;
+  signal MBR_out : byte_u;
+  signal Z, N : std_logic;
+
+  -- Helpers
+  function slv_of(b : bsel_t) return std_logic_vector is
+  begin
+    return std_logic_vector(to_unsigned(bsel_t'pos(b), 4));
+  end;
+
+  procedure clear_ctrl is
+  begin
+    enH   <= '0'; enOPC <= '0'; enTOS <= '0'; enCPP <= '0';
+    enLV  <= '0'; enSP  <= '0'; enPC  <= '0'; enMDR <= '0'; enMAR <= '0';
+
+    F0 <= '0'; F1 <= '0'; ENA <= '0'; ENB <= '0'; INVA <= '0'; INC <= '0';
+    SLL8 <= '0'; SRA1 <= '0';
+    FETCH <= '0'; READ <= '0';
+  end;
+
+  -- "Passe B" pela ULA: usa linha (F0 F1 ENA ENB INVA INC) = 0 1 0 1 0 0
+  procedure pass_B is
+  begin
+    F0 <= '0'; F1 <= '1'; ENA <= '0'; ENB <= '1'; INVA <= '0'; INC <= '0';
+  end;
+
+  -- "B + 1" (para incrementos, se quiser): 1 1 0 1 0 1
+  procedure B_plus_1 is
+  begin
+    F0 <= '1'; F1 <= '1'; ENA <= '0'; ENB <= '1'; INVA <= '0'; INC <= '1';
+  end;
+
+  -- "A + B" (precisa ter H no A): 1 1 1 1 0 0
+  procedure A_plus_B is
+  begin
+    F0 <= '1'; F1 <= '1'; ENA <= '1'; ENB <= '1'; INVA <= '0'; INC <= '0';
+  end;
+
+  -- clock
+begin
+  clk <= not clk after T/2;
+
+  -- DUT
+  DUT : entity work.mic1_datapath
+    port map (
+      clk => clk, rst => rst,
+
+      enH => enH, enOPC => enOPC, enTOS => enTOS, enCPP => enCPP,
+      enLV => enLV, enSP => enSP, enPC => enPC, enMDR => enMDR, enMAR => enMAR,
+
+      bsel_slv => bsel_slv,
+
+      F0 => F0, F1 => F1, ENA => ENA, ENB => ENB, INVA => INVA, INC => INC,
+      SLL8 => SLL8, SRA1 => SRA1,
+
+      FETCH => FETCH, READ => READ,
+      MBR_in => MBR_in, MDR_in => MDR_in,
+
+      MAR_out => MAR_out, MDR_out => MDR_out,
+      PC_out  => PC_out,  SP_out  => SP_out,
+      TOS_out => TOS_out, MBR_out => MBR_out,
+
+      Z => Z, N => N
+    );
+
+  -- estímulos
+  stim : process
+  begin
+    -- reset
+    rst <= '1'; clear_ctrl; wait for 5*T;
+    rst <= '0'; clear_ctrl; wait for 2*T;
+
+    ------------------------------------------------------------
+    -- 1) "Carrega TOS com 2" usando MBR (FETCH) e Pass B
+    ------------------------------------------------------------
+    -- carrega MBR_in (como se memória tivesse lido 0x02)
+    MBR_in <= to_unsigned(2, 8);
+    FETCH  <= '1';                 -- carrega MBR <= MBR_in
+    wait for T;
+    FETCH  <= '0';
+
+    -- TOS <- MBR (sign-extend)  ==> selecionar B = MBRs e "pass_B"
+    clear_ctrl;
+    bsel_slv <= slv_of(B_MBRs);
+    pass_B;
+    enTOS <= '1';
+    wait for T;
+    clear_ctrl; wait for T;
+
+    ------------------------------------------------------------
+    -- 2) "Carrega MDR com 3" (READ)
+    ------------------------------------------------------------
+    MDR_in <= to_unsigned(3, 32);
+    READ   <= '1';                 -- carrega MDR <= MDR_in
+    wait for T;
+    READ   <= '0';
+
+    ------------------------------------------------------------
+    -- 3) H <- TOS
+    ------------------------------------------------------------
+    clear_ctrl;
+    bsel_slv <= slv_of(B_TOS);
+    pass_B;            -- 0 + B
+    enH <= '1';
+    wait for T;
+    clear_ctrl; wait for T;
+
+    ------------------------------------------------------------
+    -- 4) TOS <- H + MDR
+    ------------------------------------------------------------
+    clear_ctrl;
+    bsel_slv <= slv_of(B_MDR);
+    A_plus_B;          -- A(H) + B(MDR)
+    enTOS <= '1';
+    wait for T;
+    clear_ctrl; wait for (3*T);
+
+    report "TOS = " & integer'image(to_integer(TOS_out)) severity note;
+
+    assert to_integer(TOS_out) = 5
+      report "Falha: esperado TOS=5 (2+3)!" severity failure;
+
+    report "OK: datapath somou (TOS=5)." severity note;
+
+    wait;
+  end process;
+end architecture;

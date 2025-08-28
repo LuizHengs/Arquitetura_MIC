@@ -1,0 +1,129 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.mic1_pkg.all;
+
+entity mic1_datapath is
+  port (
+    clk, rst : in  std_logic;
+
+    -- Controle (vindos do seu microsequenciador externo)
+    enH, enOPC, enTOS, enCPP, enLV, enSP, enPC, enMDR, enMAR : in std_logic;
+    bsel  : in bsel_t;
+    F0, F1, ENA, ENB, INVA, INC : in std_logic;
+    SLL8, SRA1 : in std_logic;
+
+    -- Interface "memória" (apenas registro; a RAM é externa)
+    FETCH : in std_logic;            -- carrega MBR <= MBR_in
+    READ  : in std_logic;            -- carrega MDR <= MDR_in
+    MBR_in : in  byte_u;
+    MDR_in : in  word_u;
+
+    -- saídas p/ quem controla a memória/depuração
+    MAR_out : out word_u;
+    MDR_out : out word_u;
+    PC_out  : out word_u;
+    SP_out  : out word_u;
+    TOS_out : out word_s;
+    MBR_out : out byte_u;
+
+    -- flags da ULA (pós-shifter)
+    Z, N : out std_logic
+  );
+end entity;
+
+architecture rtl of mic1_datapath is
+  -- registradores (formato do livro)
+  signal H, TOS, OPC, LV, CPP : word_s := (others=>'0');
+  signal PC_s, SP_s           : word_s := (others=>'0');  -- PC/SP tratados como signed no datapath
+  signal MAR_u, MDR_u         : word_u := (others=>'0');
+  signal MBR_u                : byte_u := (others=>'0');
+
+  -- caminho de dados
+  signal Bbus  : word_s := (others=>'0');
+  signal ula_y : word_s := (others=>'0');
+  signal sh_y  : word_s := (others=>'0');
+
+begin
+  -- ======= B-mux
+  with bsel select
+    Bbus <= H                when B_H,
+            PC_s             when B_PC,
+            signed(MDR_u)    when B_MDR,
+            sext8(MBR_u)     when B_MBRs,
+            zext8(MBR_u)     when B_MBRu,
+            SP_s             when B_SP,
+            LV               when B_LV,
+            CPP              when B_CPP,
+            TOS              when B_TOS,
+            OPC              when B_OPC,
+            (others => '0')  when others;
+
+  -- ======= ULA
+  U_ULA : entity work.ula
+    port map (
+      A    => H,        -- A = H (clássico MIC-1)
+      B    => Bbus,     -- B = B-mux
+      F0   => F0,  F1   => F1,
+      ENA  => ENA, ENB  => ENB,
+      INVA => INVA, INC => INC,
+      Y    => ula_y
+    );
+
+  -- ======= Shifter
+  U_SHIFT : entity work.shifter
+    port map (
+      D    => ula_y,
+      SLL8 => SLL8,
+      SRA1 => SRA1,
+      Q    => sh_y
+    );
+
+  -- ======= Flags pós-shifter
+  Z <= '1' when sh_y = 0 else '0';
+  N <= sh_y(31);
+
+  -- ======= Escritas nos registradores (C-bus + entradas de memória)
+  process(clk, rst)
+  begin
+    if rst='1' then
+      H     <= (others=>'0');
+      TOS   <= (others=>'0');
+      OPC   <= (others=>'0');
+      LV    <= (others=>'0');
+      CPP   <= (others=>'0');
+      SP_s  <= (others=>'0');
+      PC_s  <= (others=>'0');
+      MAR_u <= (others=>'0');
+      MDR_u <= (others=>'0');
+      MBR_u <= (others=>'0');
+    elsif rising_edge(clk) then
+      -- carregamentos vindos da memória externa
+      if FETCH = '1' then
+        MBR_u <= MBR_in;
+      end if;
+      if READ = '1' then
+        MDR_u <= MDR_in;
+      end if;
+
+      -- C-bus destinos
+      if enH   = '1' then H    <= sh_y; end if;
+      if enOPC = '1' then OPC  <= sh_y; end if;
+      if enTOS = '1' then TOS  <= sh_y; end if;
+      if enCPP = '1' then CPP  <= sh_y; end if;
+      if enLV  = '1' then LV   <= sh_y; end if;
+      if enSP  = '1' then SP_s <= sh_y; end if;
+      if enPC  = '1' then PC_s <= sh_y; end if;
+      if enMAR = '1' then MAR_u<= unsigned(sh_y); end if;
+      if enMDR = '1' then MDR_u<= unsigned(sh_y); end if;
+    end if;
+  end process;
+
+  -- ======= saídas “visíveis”
+  MAR_out <= MAR_u;
+  MDR_out <= MDR_u;
+  PC_out  <= unsigned(PC_s);
+  SP_out  <= unsigned(SP_s);
+  TOS_out <= TOS;
+  MBR_out <= MBR_u;
+end architecture;

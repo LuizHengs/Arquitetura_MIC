@@ -1,0 +1,35 @@
+# do MIC_1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:31:14 on Aug 21,2025
+# vcom -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 19:31:14 on Aug 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:31:14 on Aug 21,2025
+# vcom -work work Waveform2.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mic1_draw_vhd_vec_tst
+# -- Compiling architecture mic1_draw_arch of mic1_draw_vhd_vec_tst
+# End time: 19:31:14 on Aug 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error (suppressible): (vsim-SDF-3196) Failed to find SDF file "MIC_1_vhd.sdo".
+# Use the -help option for complete vsim usage.
+# vsim -novopt -c -t 1ps -sdfmax "mic1_draw_vhd_vec_tst/i1=MIC_1_vhd.sdo" -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mic1_draw_vhd_vec_tst 
+# Error loading design
+# Errors: 1, Warnings: 0

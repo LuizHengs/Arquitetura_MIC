@@ -1,0 +1,4365 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Copying /opt/intelFPGA_lite/24.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:18:23 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:18:23 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:18:29 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:18:29 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# vsim -t ns work.mic1_draw 
+# Start time: 23:18:29 on Aug 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_ena.do
+# ===== stim_debug_ena.do =====
+# Verifica se ENA realmente zera a perna A da ULA.
+# Caso ENA=0 e Y ainda dependa de A, sua ULA precisa mascarar A.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} { array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}; bsel_none; force -deposit $::TOP/bsel_oh($IDX($src)) 1 }
+# 
+# ULA modes (iguais aos seus)
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# Descobre Y e C automaticamente
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_y {hex msg} {
+#   if {$::YSIG eq ""} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YSIG]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# 
+# ---------- Sequência ----------
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/SRA1 0
+# 
+# Zera H e PC de forma síncrona (1 ciclo cada)
+# ula ZERO; bsel H;  force -deposit $TOP/enH  1; step 1; force -deposit $TOP/enH  0
+# ula ZERO; bsel H;  force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# 
+# Carrega H <- 1 (para testar o vazamento de A)
+# force -deposit $TOP/MDR_in 16#00000001#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# Estado agora: H=1, PC=0
+# 
+# Caso A: B_PLUS_1 canônico (ENA=0). A deve ser ignorado. Esperado Y=1 (0 + 1).
+# bsel PC; ula B_PLUS_1
+# run 1 ns
+# expect_y 00000001 "ENA=0, A=1, B=0, INC=1  -> Y deve ser 1"
+# PASS ENA=0, A=1, B=0, INC=1  -> Y deve ser 1 -> Y=00000001
+# 
+# Caso B: mesma coisa, mas com ENA=1 (A+B+1). Esperado Y=2.
+# force -deposit $TOP/ENA 1
+# run 1 ns
+# expect_y 00000002 "ENA=1, A=1, B=0, INC=1  -> Y deve ser 2"
+# PASS ENA=1, A=1, B=0, INC=1  -> Y deve ser 2 -> Y=00000002
+# 
+# echo ">> Se o primeiro teste (ENA=0) deu 2, a perna A não está sendo zerada quando ENA=0."
+# >> Se o primeiro teste (ENA=0) deu 2, a perna A não está sendo zerada quando ENA=0.
+# update
+# ===== fim =====
+# 
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate.do (checa C e Y; PC+1 corrigido) =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# -------- clock 10 ns (50% duty) --------
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# -------- helpers --------
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# 
+# proc bsel_none {} {
+#   for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 }
+# }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     A_AND_B  {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_OR_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# -------- localizar C-bus (Cprobe/Cbus) e Yprobe --------
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# 
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# normalização de hex
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# 
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]
+#   set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} {
+#     echo "PASS $msg (Z=$z N=$n)"
+#   } else {
+#     echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)"
+#   }
+# }
+# 
+# -------- reset --------
+# clear_ctrl
+# force -deposit $TOP/rst 1
+# step 2
+# force -deposit $TOP/rst 0
+# step 1
+# 
+# ========== TESTES ==========
+# 
+# 1) TOS <- 2 (MBRs)
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_y 00000002 "Y=MBRs"
+# PASS Y=MBRs -> Y=00000002
+# expect_c 00000002 "TOS <= 2 (MBRs)"
+# PASS TOS <= 2 (MBRs) -> C=00000002
+# expect_flags 0 0 "TOS=2"
+# PASS TOS=2 (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# 2) MDR <- 3 (READ)
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# 3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1
+# force -deposit $TOP/enH 0; bsel_none; clear_ctrl
+# 
+# 4) TOS <- H + MDR => 5
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_y 00000005 "Y = H + MDR"
+# PASS Y = H + MDR -> Y=00000005
+# expect_c 00000005 "H + MDR"
+# PASS H + MDR -> C=00000005
+# expect_flags 0 0 "Resultado 5"
+# PASS Resultado 5 (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# 5) PC <- 0 e depois PC <- PC + 1  (com ciclo idle para assentar)
+# ula ZERO
+# force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0         ;# H=0
+# bsel H; ula PASS_B
+# force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0        ;# PC=0
+# clear_ctrl; step 1                                                     ;# idle
+# bsel PC; ula B_PLUS_1
+# force -deposit $TOP/enPC 1; step 1
+# expect_y 00000001 "Y = PC + 1"
+# FAIL Y = PC + 1 -> got 00000002 expected 00000001
+# expect_c 00000001 "PC + 1"
+# FAIL PC + 1 -> got 00000002 expected 00000001
+# force -deposit $TOP/enPC 0; bsel_none; clear_ctrl
+# 
+# 6) SLL8 (TOS <<= 8) -> C=0x00000500, Y deve ser 0x00000005
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1; force -deposit $TOP/enTOS 1; step 1
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# FAIL Y antes do shift (TOS=5) -> got 00000500 expected 00000005
+# expect_c 00000500 "SLL8 (5 << 8)"
+# FAIL SLL8 (5 << 8) -> got 00050000 expected 00000500
+# expect_flags 0 0 "SLL8 flags"
+# PASS SLL8 flags (Z=0 N=0)
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# 7) SRA1: -4 >> 1 => -2  (Y=-4, C=-2)
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1; force -deposit $TOP/enTOS 1; step 1
+# expect_y fffffffc "Y antes do shift (-4)"
+# FAIL Y antes do shift (-4) -> got fffffffe expected fffffffc
+# expect_c fffffffe "SRA1(-4)"
+# FAIL SRA1(-4) -> got ffffffff expected fffffffe
+# expect_flags 0 1 "SRA1 flags"
+# PASS SRA1 flags (Z=0 N=1)
+# force -deposit $TOP/SRA1 0; force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 330 ns
+# echo ">> Testes concluídos."
+# >> Testes concluídos.
+# ===== fim =====
+# 
+# do scan_bsel_mbrs.do
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# clock/reset curto
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# force -deposit $TOP/rst 1; run 30 ns
+# force -deposit $TOP/rst 0; run 10 ns
+# 
+# ULA e shifter neutros
+# force -deposit $TOP/F0 0; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 0; force -deposit $TOP/ENB 1
+# force -deposit $TOP/INVA 0; force -deposit $TOP/INC 0
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/SRA1 0
+# 
+# carrega MBR=0x02
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; run 10 ns; force -deposit $TOP/FETCH 0; run 5 ns
+# 
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# 
+# Bprobe no topo?
+# set HAVE_BPROBE 0
+# 0
+# set CANDS [find signals -r $TOP/*Bprobe*]
+# /mic1_draw/ww_Bprobe /mic1_draw/Bprobe
+# if {[llength $CANDS] > 0} { set BPROBE [lindex $CANDS 0]; set HAVE_BPROBE 1 }
+# 1
+# 
+# echo "---- varrendo bsel_oh com MBR=0x02 ----"
+# ---- varrendo bsel_oh com MBR=0x02 ----
+# for {set i 0} {$i<10} {incr i} {
+#   bsel_none
+#   force -deposit $TOP/bsel_oh($i) 1
+#   run 2 ns
+#   set z [examine $TOP/Z]
+#   if {$::HAVE_BPROBE} { set bp [examine -radix hex $BPROBE]; echo "bsel_oh($i)=1 -> Bprobe=$bp  Z=$z" } else { echo "bsel_oh($i)=1 -> Z=$z" }
+# }
+# bsel_oh(0)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(1)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(2)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(3)=1 -> Bprobe=00000002  Z=0
+# bsel_oh(4)=1 -> Bprobe=00000002  Z=0
+# bsel_oh(5)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(6)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(7)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(8)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(9)=1 -> Bprobe=00000000  Z=1
+# bsel_none
+# echo "Dica: indice com Z=0 e/ou Bprobe!=0 é a fonte do B-bus (MBRs/MBRu)."
+# Dica: indice com Z=0 e/ou Bprobe!=0 é a fonte do B-bus (MBRs/MBRu).
+# 
+# run 2 us
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:19:41 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:19:41 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 23:19:42 on Aug 23,2025, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 23:19:42 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_pc.do
+# ===== stim_debug_pc.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} { array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}; bsel_none; force -deposit $::TOP/bsel_oh($IDX($src)) 1 }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# Reset e zera H/PC
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# ula ZERO; bsel H; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# 
+# PC + 1 (B = PC, ENA=0)
+# bsel PC; ula B_PLUS_1; force -deposit $TOP/enPC 1; step 1
+# set y [examine -radix hex $TOP/Yprobe]
+# 00000X0X
+# set c [lindex [concat [examine -radix hex [lindex [find signals -r $TOP/*Cprobe*] 0]] [examine -radix hex [lindex [find signals -r $TOP/*Cbus*] 0]]] 0]
+# ** UI-Msg (Error): (vish-4014) No objects found matching ''.
+# Executing ONERROR command at macro ./stim_debug_pc.do line 27
+# echo "PC+1 -> Y=$y  C=$c (esperado 00000001)"
+# ** Error: can't read "c": no such variable
+# Executing ONERROR command at macro ./stim_debug_pc.do line 28
+# 
+# Se sair 00000002, revise a ULA: A_gated <= (others=>'0') quando ENA='0'.
+# ===== fim =====
+# 
+# do stim_debug_ena.do
+# ===== stim_debug_ena.do =====
+# Verifica se ENA realmente zera a perna A da ULA.
+# Caso ENA=0 e Y ainda dependa de A, sua ULA precisa mascarar A.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} { array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}; bsel_none; force -deposit $::TOP/bsel_oh($IDX($src)) 1 }
+# 
+# ULA modes (iguais aos seus)
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# Descobre Y e C automaticamente
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_y {hex msg} {
+#   if {$::YSIG eq ""} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YSIG]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# 
+# ---------- Sequência ----------
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/SRA1 0
+# 
+# Zera H e PC de forma síncrona (1 ciclo cada)
+# ula ZERO; bsel H;  force -deposit $TOP/enH  1; step 1; force -deposit $TOP/enH  0
+# ula ZERO; bsel H;  force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# 
+# Carrega H <- 1 (para testar o vazamento de A)
+# force -deposit $TOP/MDR_in 16#00000001#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# Estado agora: H=1, PC=0
+# 
+# Caso A: B_PLUS_1 canônico (ENA=0). A deve ser ignorado. Esperado Y=1 (0 + 1).
+# bsel PC; ula B_PLUS_1
+# run 1 ns
+# expect_y 00000001 "ENA=0, A=1, B=0, INC=1  -> Y deve ser 1"
+# PASS ENA=0, A=1, B=0, INC=1  -> Y deve ser 1 -> Y=00000001
+# 
+# Caso B: mesma coisa, mas com ENA=1 (A+B+1). Esperado Y=2.
+# force -deposit $TOP/ENA 1
+# run 1 ns
+# expect_y 00000002 "ENA=1, A=1, B=0, INC=1  -> Y deve ser 2"
+# PASS ENA=1, A=1, B=0, INC=1  -> Y deve ser 2 -> Y=00000002
+# 
+# echo ">> Se o primeiro teste (ENA=0) deu 2, a perna A não está sendo zerada quando ENA=0."
+# >> Se o primeiro teste (ENA=0) deu 2, a perna A não está sendo zerada quando ENA=0.
+# update
+# ===== fim =====
+# 
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate_v3.do (C e Y checados corretamente) =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# ---- clock 10 ns (50% duty) ----
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# ---- helpers ----
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# ---- localizar C (Cprobe/Cbus) e Yprobe ----
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} { echo "PASS $msg (Z=$z N=$n)" } \
+#   else { echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)" }
+# }
+# 
+# ---- reset ----
+# clear_ctrl
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# 
+# 1) TOS <- 2 (MBRs)
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_y 00000002 "Y=MBRs"
+# PASS Y=MBRs -> Y=00000002
+# expect_c 00000002 "TOS <= 2 (MBRs)"
+# PASS TOS <= 2 (MBRs) -> C=00000002
+# expect_flags 0 0 "TOS=2"
+# PASS TOS=2 (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# 2) MDR <- 3
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# 3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1
+# force -deposit $TOP/enH 0; bsel_none; clear_ctrl
+# 
+# 4) TOS <- H + MDR => 5
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_y 00000005 "Y = H + MDR"
+# PASS Y = H + MDR -> Y=00000005
+# expect_c 00000005 "H + MDR"
+# PASS H + MDR -> C=00000005
+# expect_flags 0 0 "Resultado 5"
+# PASS Resultado 5 (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# 5) PC <- 0 e depois PC <- PC + 1  (zera H e PC antes para não contaminar A)
+# ula ZERO; bsel H; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; step 1
+# bsel PC; ula B_PLUS_1
+# force -deposit $TOP/enPC 1; step 1
+# expect_y 00000001 "Y = PC + 1"
+# FAIL Y = PC + 1 -> got 00000002 expected 00000001
+# expect_c 00000001 "PC + 1"
+# FAIL PC + 1 -> got 00000002 expected 00000001
+# force -deposit $TOP/enPC 0; bsel_none; clear_ctrl
+# 
+# 6) SLL8 (TOS <<= 8)  -> Y=00000005 (pré), C=00000500 (pós)
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1; force -deposit $TOP/enTOS 1; step 1
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# FAIL Y antes do shift (TOS=5) -> got 00000500 expected 00000005
+# expect_c 00000500 "SLL8 (5 << 8)"
+# FAIL SLL8 (5 << 8) -> got 00050000 expected 00000500
+# expect_flags 0 0 "SLL8 flags"
+# PASS SLL8 flags (Z=0 N=0)
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# 7) SRA1: -4 >> 1 => -2  (Y=-4, C=-2)
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1; force -deposit $TOP/enTOS 1; step 1
+# expect_y fffffffc "Y antes do shift (-4)"
+# FAIL Y antes do shift (-4) -> got fffffffe expected fffffffc
+# expect_c fffffffe "SRA1(-4)"
+# FAIL SRA1(-4) -> got ffffffff expected fffffffe
+# expect_flags 0 1 "SRA1 flags"
+# PASS SRA1 flags (Z=0 N=1)
+# force -deposit $TOP/SRA1 0; force -deposit $TOP/enTOS 0; bsel_none; clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 393 ns
+# echo ">> Testes concluídos (v3)."
+# >> Testes concluídos (v3).
+# ===== fim =====
+# 
+# do scan_bsel_mbrs.do
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# clock/reset curto
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# force -deposit $TOP/rst 1; run 30 ns
+# force -deposit $TOP/rst 0; run 10 ns
+# 
+# ULA e shifter neutros
+# force -deposit $TOP/F0 0; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 0; force -deposit $TOP/ENB 1
+# force -deposit $TOP/INVA 0; force -deposit $TOP/INC 0
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/SRA1 0
+# 
+# carrega MBR=0x02
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; run 10 ns; force -deposit $TOP/FETCH 0; run 5 ns
+# 
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# 
+# Bprobe no topo?
+# set HAVE_BPROBE 0
+# 0
+# set CANDS [find signals -r $TOP/*Bprobe*]
+# /mic1_draw/ww_Bprobe /mic1_draw/Bprobe
+# if {[llength $CANDS] > 0} { set BPROBE [lindex $CANDS 0]; set HAVE_BPROBE 1 }
+# 1
+# 
+# echo "---- varrendo bsel_oh com MBR=0x02 ----"
+# ---- varrendo bsel_oh com MBR=0x02 ----
+# for {set i 0} {$i<10} {incr i} {
+#   bsel_none
+#   force -deposit $TOP/bsel_oh($i) 1
+#   run 2 ns
+#   set z [examine $TOP/Z]
+#   if {$::HAVE_BPROBE} { set bp [examine -radix hex $BPROBE]; echo "bsel_oh($i)=1 -> Bprobe=$bp  Z=$z" } else { echo "bsel_oh($i)=1 -> Z=$z" }
+# }
+# bsel_oh(0)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(1)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(2)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(3)=1 -> Bprobe=00000002  Z=0
+# bsel_oh(4)=1 -> Bprobe=00000002  Z=0
+# bsel_oh(5)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(6)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(7)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(8)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(9)=1 -> Bprobe=00000000  Z=1
+# bsel_none
+# echo "Dica: indice com Z=0 e/ou Bprobe!=0 é a fonte do B-bus (MBRs/MBRu)."
+# Dica: indice com Z=0 e/ou Bprobe!=0 é a fonte do B-bus (MBRs/MBRu).
+# 
+# run 2 us
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:24:08 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:24:08 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 23:24:09 on Aug 23,2025, Elapsed time: 0:04:27
+# Errors: 1, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 23:24:09 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate_v4.do =====
+# Sequência de testes do MIC-1 (gates) medindo Y/C ANTES do flanco de clock.
+# Assim evitamos ler o valor recombinado depois da escrita do registrador.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# ---- relógio 10 ns (50% duty) ----
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# ---- helpers ----
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# ULA (Figura 4.2)
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# ---- localizar C (Cprobe/Cbus) e Yprobe ----
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# 
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} { echo "PASS $msg (Z=$z N=$n)" } \
+#   else { echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)" }
+# }
+# 
+# ===================== SEQUÊNCIA =====================
+# 
+# Reset
+# clear_ctrl
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# 
+# 1) TOS <- 2 (MBRs)  --- mede ANTES do flanco
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B
+# run 1 ns
+# expect_y 00000002 "Y=MBRs"
+# PASS Y=MBRs -> Y=00000002
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000002 "TOS <= 2 (MBRs)"
+# PASS TOS <= 2 (MBRs) -> C=00000002
+# expect_flags 0 0 "TOS=2"
+# PASS TOS=2 (Z=0 N=0)
+# clear_ctrl
+# 
+# 2) MDR <- 3
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# 3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# clear_ctrl
+# 
+# 4) TOS <- H + MDR => 5  --- mede ANTES do flanco
+# bsel MDR; ula A_PLUS_B
+# run 1 ns
+# expect_y 00000005 "Y = H + MDR"
+# PASS Y = H + MDR -> Y=00000005
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000005 "H + MDR"
+# PASS H + MDR -> C=00000005
+# expect_flags 0 0 "Resultado 5"
+# PASS Resultado 5 (Z=0 N=0)
+# clear_ctrl
+# 
+# 5) PC <- 0 e depois PC <- PC + 1
+# zera H e PC primeiro
+# ula ZERO; bsel H; force -deposit $TOP/enH 1;  step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# 
+# mede Y combinacional (PC + 1) ANTES do flanco
+# bsel PC; ula B_PLUS_1
+# run 1 ns
+# expect_y 00000001 "Y = PC + 1 (combinacional)"
+# PASS Y = PC + 1 (combinacional) -> Y=00000001
+# 
+# grava PC <- PC+1 no flanco; depois limpa para não recombinar para 2
+# force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# Se quiser, confirme que PC armazenou 1:
+# bsel PC; ula PASS_B; run 1 ns; expect_y 00000001 "PC armazenado = 1"
+# PASS PC armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# 6) SLL8 (TOS <<= 8)
+# mede Y (pré-shift) e C (pós-shift) ANTES de gravar em TOS
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# PASS Y antes do shift (TOS=5) -> Y=00000005
+# expect_c 00000500 "C depois do shift (5<<8)"
+# PASS C depois do shift (5<<8) -> C=00000500
+# agora grava TOS <- Q e limpa
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SLL8 0
+# expect_flags 0 0 "SLL8 flags"
+# PASS SLL8 flags (Z=0 N=0)
+# clear_ctrl
+# 
+# 7) SRA1: -4 >> 1 => -2
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1
+# run 1 ns
+# expect_y fffffffc "Y antes do shift (-4)"
+# PASS Y antes do shift (-4) -> Y=fffffffc
+# expect_c fffffffe "C depois do shift (-4>>1)"
+# PASS C depois do shift (-4>>1) -> C=fffffffe
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SRA1 0
+# expect_flags 0 1 "SRA1 flags"
+# PASS SRA1 flags (Z=0 N=1)
+# clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 252 ns
+# echo ">> Testes concluídos (v4)  agora as medições são feitas antes do flanco."
+# >> Testes concluídos (v4)  agora as medições são feitas antes do flanco.
+# ===== fim =====
+# 
+# do scan_bsel_mbrs.do
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# clock/reset curto
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# force -deposit $TOP/rst 1; run 30 ns
+# force -deposit $TOP/rst 0; run 10 ns
+# 
+# ULA e shifter neutros
+# force -deposit $TOP/F0 0; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 0; force -deposit $TOP/ENB 1
+# force -deposit $TOP/INVA 0; force -deposit $TOP/INC 0
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/SRA1 0
+# 
+# carrega MBR=0x02
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; run 10 ns; force -deposit $TOP/FETCH 0; run 5 ns
+# 
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# 
+# Bprobe no topo?
+# set HAVE_BPROBE 0
+# 0
+# set CANDS [find signals -r $TOP/*Bprobe*]
+# /mic1_draw/ww_Bprobe /mic1_draw/Bprobe
+# if {[llength $CANDS] > 0} { set BPROBE [lindex $CANDS 0]; set HAVE_BPROBE 1 }
+# 1
+# 
+# echo "---- varrendo bsel_oh com MBR=0x02 ----"
+# ---- varrendo bsel_oh com MBR=0x02 ----
+# for {set i 0} {$i<10} {incr i} {
+#   bsel_none
+#   force -deposit $TOP/bsel_oh($i) 1
+#   run 2 ns
+#   set z [examine $TOP/Z]
+#   if {$::HAVE_BPROBE} { set bp [examine -radix hex $BPROBE]; echo "bsel_oh($i)=1 -> Bprobe=$bp  Z=$z" } else { echo "bsel_oh($i)=1 -> Z=$z" }
+# }
+# bsel_oh(0)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(1)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(2)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(3)=1 -> Bprobe=00000002  Z=0
+# bsel_oh(4)=1 -> Bprobe=00000002  Z=0
+# bsel_oh(5)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(6)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(7)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(8)=1 -> Bprobe=00000000  Z=1
+# bsel_oh(9)=1 -> Bprobe=00000000  Z=1
+# bsel_none
+# echo "Dica: indice com Z=0 e/ou Bprobe!=0 é a fonte do B-bus (MBRs/MBRu)."
+# Dica: indice com Z=0 e/ou Bprobe!=0 é a fonte do B-bus (MBRs/MBRu).
+# 
+# run 2 us
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:30:30 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:30:30 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 23:30:31 on Aug 23,2025, Elapsed time: 0:06:22
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 23:30:31 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate_v5.do =====
+# Testes do MIC-1 (gates) medindo Y/C ANTES do flanco de clock.
+# Inclui ALU lógica (AND/OR), INVA/INC, flags, PC+1, SLL8, SRA1, e writes.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# ---- relógio 10 ns (50% duty) ----
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# ---- helpers ----
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# ULA (Figura 4.2)
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     A_AND_B  {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_OR_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# ---- localizar C (Cprobe/Cbus) e Yprobe ----
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# 
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} { echo "PASS $msg (Z=$z N=$n)" } \
+#   else { echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)" }
+# }
+# 
+# ===================== SEQUÊNCIA =====================
+# 
+# Reset
+# clear_ctrl
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# 
+# (1) TOS <- 2 (MBRs)  mede ANTES do flanco
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; run 1 ns
+# expect_y 00000002 "Y=MBRs"
+# PASS Y=MBRs -> Y=00000002
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000002 "TOS <= 2 (MBRs)"
+# PASS TOS <= 2 (MBRs) -> C=00000002
+# expect_flags 0 0 "TOS=2"
+# PASS TOS=2 (Z=0 N=0)
+# clear_ctrl
+# 
+# (2) MDR <- 3 (READ)
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# (3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# clear_ctrl
+# 
+# (4) TOS <- H + MDR => 5  mede ANTES do flanco
+# bsel MDR; ula A_PLUS_B; run 1 ns
+# expect_y 00000005 "Y = H + MDR"
+# PASS Y = H + MDR -> Y=00000005
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000005 "C = H + MDR"
+# PASS C = H + MDR -> C=00000005
+# expect_flags 0 0 "Resultado 5"
+# PASS Resultado 5 (Z=0 N=0)
+# clear_ctrl
+# 
+# (5) PC <- 0; depois PC <- PC + 1  mede ANTES do flanco
+# ula ZERO; bsel H; force -deposit $TOP/enH 1;  step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0   ;# PC=0
+# clear_ctrl; run 1 ns
+# bsel PC; ula B_PLUS_1; run 1 ns
+# expect_y 00000001 "Y = PC + 1 (combinacional)"
+# PASS Y = PC + 1 (combinacional) -> Y=00000001
+# force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula PASS_B; run 1 ns; expect_y 00000001 "PC armazenado = 1"
+# PASS PC armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# (6) SLL8 (TOS <<= 8)  mede Y pré e C pós-shift ANTES do flanco
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1; run 1 ns
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# PASS Y antes do shift (TOS=5) -> Y=00000005
+# expect_c 00000500 "C depois do shift (5<<8)"
+# PASS C depois do shift (5<<8) -> C=00000500
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SLL8 0
+# expect_flags 0 0 "SLL8 flags"
+# PASS SLL8 flags (Z=0 N=0)
+# clear_ctrl
+# 
+# (7) SRA1: -4 >> 1 => -2  mede ANTES do flanco
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1; run 1 ns
+# expect_y fffffffc "Y antes do shift (-4)"
+# PASS Y antes do shift (-4) -> Y=fffffffc
+# expect_c fffffffe "C depois do shift (-4>>1)"
+# PASS C depois do shift (-4>>1) -> C=fffffffe
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SRA1 0
+# expect_flags 0 1 "SRA1 flags"
+# PASS SRA1 flags (Z=0 N=1)
+# clear_ctrl
+# 
+# (8) ALU lógica: A_AND_B
+# H <- 0xF0F0F0F0; MDR <- 0x0FF00FF0 ; Y = H AND MDR = 0x00F000F0
+# force -deposit $TOP/MDR_in 16#F0F0F0F0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# force -deposit $TOP/MDR_in 16#0FF00FF0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_AND_B; run 1 ns
+# expect_y 00f000f0 "A_AND_B: Y"
+# PASS A_AND_B: Y -> Y=00f000f0
+# expect_c 00f000f0 "A_AND_B: C"
+# PASS A_AND_B: C -> C=00f000f0
+# expect_flags 0 0 "A_AND_B flags"
+# PASS A_AND_B flags (Z=0 N=0)
+# clear_ctrl
+# 
+# (9) ALU lógica: A_OR_B
+# H (fica) = 0xF0F0F0F0; MDR = 0x0000000F ; Y = 0xF0F0F0FF
+# force -deposit $TOP/MDR_in 16#0000000F#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_OR_B; run 1 ns
+# expect_y f0f0f0ff "A_OR_B: Y"
+# PASS A_OR_B: Y -> Y=f0f0f0ff
+# expect_c f0f0f0ff "A_OR_B: C"
+# PASS A_OR_B: C -> C=f0f0f0ff
+# expect_flags 0 1 "A_OR_B flags (negativo)"
+# PASS A_OR_B flags (negativo) (Z=0 N=1)
+# clear_ctrl
+# 
+# (10) INVA + ADD + INC = (~A)+B+1 (two's complement de A quando B=0)
+# H <- 0 ; B=0 ; INVA=1 ; INC=1 ; Y=0 ; Z deve ser 1
+# ula ZERO; bsel H; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0   ;# H=0
+# clear_ctrl
+# Configura add com ENA=1 ENB=0 INVA=1 INC=1
+# force -deposit $TOP/F0 1; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 1; force -deposit $TOP/ENB 0
+# force -deposit $TOP/INVA 1; force -deposit $TOP/INC 1
+# run 1 ns
+# expect_y 00000000 "INVA+INC sobre A=0 -> 0"
+# PASS INVA+INC sobre A=0 -> 0 -> Y=00000000
+# expect_c 00000000 "INVA+INC: C"
+# PASS INVA+INC: C -> C=00000000
+# expect_flags 1 0 "INVA+INC flags (zero)"
+# PASS INVA+INC flags (zero) (Z=1 N=0)
+# clear_ctrl
+# 
+# (11) Flags com MSB=1 (negativo) via PASS_B
+# MDR <- 0x80000000 ; Y = 0x80000000 ; N=1 Z=0
+# force -deposit $TOP/MDR_in 16#80000000#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y 80000000 "PASS_B negativo: Y"
+# PASS PASS_B negativo: Y -> Y=80000000
+# expect_c 80000000 "PASS_B negativo: C"
+# PASS PASS_B negativo: C -> C=80000000
+# expect_flags 0 1 "PASS_B negativo: flags"
+# PASS PASS_B negativo: flags (Z=0 N=1)
+# clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 319 ns
+# echo ">> Testes concluídos (v5)  todas as medições feitas ANTES do flanco."
+# >> Testes concluídos (v5)  todas as medições feitas ANTES do flanco.
+# ===== fim =====
+# 
+# run 2 us
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:34:33 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:34:33 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 23:34:34 on Aug 23,2025, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 23:34:34 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate_v6.do =====
+# Ampliação dos testes do MIC-1 (gates) medindo Y/C ANTES do flanco de clock.
+# Adições: MBRs/MBRu, ENB gating, ENA gating, SP+1, writes/reads de LV/CPP/OPC.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# ---- relógio 10 ns (50% duty) ----
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# ---- helpers ----
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# ULA (Figura 4.2)
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     A_AND_B  {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_OR_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# ---- localizar C (Cprobe/Cbus) e Yprobe ----
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# 
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} { echo "PASS $msg (Z=$z N=$n)" } \
+#   else { echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)" }
+# }
+# 
+# ===================== SEQUÊNCIA =====================
+# 
+# Reset
+# clear_ctrl
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# 
+# (1) TOS <- 2 (MBRs)  mede ANTES do flanco
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; run 1 ns
+# expect_y 00000002 "Y=MBRs"
+# PASS Y=MBRs -> Y=00000002
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000002 "TOS <= 2 (MBRs)"
+# PASS TOS <= 2 (MBRs) -> C=00000002
+# expect_flags 0 0 "TOS=2"
+# PASS TOS=2 (Z=0 N=0)
+# clear_ctrl
+# 
+# (2) MDR <- 3 (READ)
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# (3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# clear_ctrl
+# 
+# (4) TOS <- H + MDR => 5  mede ANTES do flanco
+# bsel MDR; ula A_PLUS_B; run 1 ns
+# expect_y 00000005 "Y = H + MDR"
+# PASS Y = H + MDR -> Y=00000005
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000005 "C = H + MDR"
+# PASS C = H + MDR -> C=00000005
+# expect_flags 0 0 "Resultado 5"
+# PASS Resultado 5 (Z=0 N=0)
+# clear_ctrl
+# 
+# (5) PC <- 0; depois PC <- PC + 1  mede ANTES do flanco
+# ula ZERO; bsel H; force -deposit $TOP/enH 1;  step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0   ;# PC=0
+# clear_ctrl; run 1 ns
+# bsel PC; ula B_PLUS_1; run 1 ns
+# expect_y 00000001 "Y = PC + 1 (combinacional)"
+# PASS Y = PC + 1 (combinacional) -> Y=00000001
+# force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula PASS_B; run 1 ns; expect_y 00000001 "PC armazenado = 1"
+# PASS PC armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# (6) SLL8 (TOS <<= 8)  mede Y pré e C pós-shift ANTES do flanco
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1; run 1 ns
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# PASS Y antes do shift (TOS=5) -> Y=00000005
+# expect_c 00000500 "C depois do shift (5<<8)"
+# PASS C depois do shift (5<<8) -> C=00000500
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SLL8 0
+# expect_flags 0 0 "SLL8 flags"
+# PASS SLL8 flags (Z=0 N=0)
+# clear_ctrl
+# 
+# (7) SRA1: -4 >> 1 => -2  mede ANTES do flanco
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1; run 1 ns
+# expect_y fffffffc "Y antes do shift (-4)"
+# PASS Y antes do shift (-4) -> Y=fffffffc
+# expect_c fffffffe "C depois do shift (-4>>1)"
+# PASS C depois do shift (-4>>1) -> C=fffffffe
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SRA1 0
+# expect_flags 0 1 "SRA1 flags"
+# PASS SRA1 flags (Z=0 N=1)
+# clear_ctrl
+# 
+# (8) ALU lógica: A_AND_B
+# H <- 0xF0F0F0F0; MDR <- 0x0FF00FF0 ; Y = 0x00F000F0
+# force -deposit $TOP/MDR_in 16#F0F0F0F0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# force -deposit $TOP/MDR_in 16#0FF00FF0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_AND_B; run 1 ns
+# expect_y 00f000f0 "A_AND_B: Y"
+# PASS A_AND_B: Y -> Y=00f000f0
+# expect_c 00f000f0 "A_AND_B: C"
+# PASS A_AND_B: C -> C=00f000f0
+# expect_flags 0 0 "A_AND_B flags"
+# PASS A_AND_B flags (Z=0 N=0)
+# clear_ctrl
+# 
+# (9) ALU lógica: A_OR_B
+# H (fica)=0xF0F0F0F0; MDR=0x0000000F ; Y=0xF0F0F0FF
+# force -deposit $TOP/MDR_in 16#0000000F#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_OR_B; run 1 ns
+# expect_y f0f0f0ff "A_OR_B: Y"
+# PASS A_OR_B: Y -> Y=f0f0f0ff
+# expect_c f0f0f0ff "A_OR_B: C"
+# PASS A_OR_B: C -> C=f0f0f0ff
+# expect_flags 0 1 "A_OR_B flags (negativo)"
+# PASS A_OR_B flags (negativo) (Z=0 N=1)
+# clear_ctrl
+# 
+# (10) INVA + ADD + INC = (~A)+B+1 com B=0  -> 0; Z=1
+# ula ZERO; bsel H; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0   ;# H=0
+# clear_ctrl
+# force -deposit $TOP/F0 1; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 1; force -deposit $TOP/ENB 0
+# force -deposit $TOP/INVA 1; force -deposit $TOP/INC 1
+# run 1 ns
+# expect_y 00000000 "INVA+INC sobre A=0 -> 0"
+# PASS INVA+INC sobre A=0 -> 0 -> Y=00000000
+# expect_c 00000000 "INVA+INC: C"
+# PASS INVA+INC: C -> C=00000000
+# expect_flags 1 0 "INVA+INC flags (zero)"
+# PASS INVA+INC flags (zero) (Z=1 N=0)
+# clear_ctrl
+# 
+# (11) PASS_B com MSB=1 -> N=1, Z=0
+# force -deposit $TOP/MDR_in 16#80000000#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y 80000000 "PASS_B negativo: Y"
+# PASS PASS_B negativo: Y -> Y=80000000
+# expect_c 80000000 "PASS_B negativo: C"
+# PASS PASS_B negativo: C -> C=80000000
+# expect_flags 0 1 "PASS_B negativo: flags"
+# PASS PASS_B negativo: flags (Z=0 N=1)
+# clear_ctrl
+# 
+# (12) MBRs (sign-extend) vs MBRu (zero-extend) com 0xFF
+# force -deposit $TOP/MBR_in 16#FF#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; run 1 ns
+# expect_y ffffffff "MBRs (sign-extend 0xFF)"
+# PASS MBRs (sign-extend 0xFF) -> Y=ffffffff
+# expect_c ffffffff "MBRs -> C"
+# PASS MBRs -> C -> C=ffffffff
+# bsel MBRu; ula PASS_B; run 1 ns
+# expect_y 000000ff "MBRu (zero-extend 0xFF)"
+# PASS MBRu (zero-extend 0xFF) -> Y=000000ff
+# expect_c 000000ff "MBRu -> C"
+# PASS MBRu -> C -> C=000000ff
+# clear_ctrl
+# 
+# (13) ENB gating em PASS_B (B deve zerar quando ENB=0)
+# force -deposit $TOP/MDR_in 16#00000001#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0  ;# B=1
+# bsel MDR; ula PASS_B
+# force -deposit $TOP/ENB 0; run 1 ns
+# expect_y 00000000 "ENB=0 mascara B (PASS_B)"
+# PASS ENB=0 mascara B (PASS_B) -> Y=00000000
+# force -deposit $TOP/ENB 1; run 1 ns
+# expect_y 00000001 "ENB=1 libera B (PASS_B)"
+# PASS ENB=1 libera B (PASS_B) -> Y=00000001
+# clear_ctrl
+# 
+# (14) ENA gating em A_PLUS_B (A deve zerar quando ENA=0)
+# H=1, B=2 -> com ENA=0 sai 2; com ENA=1 sai 3
+# force -deposit $TOP/MDR_in 16#00000001#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0        ;# H=1
+# force -deposit $TOP/MDR_in 16#00000002#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_PLUS_B
+# force -deposit $TOP/ENA 0; run 1 ns
+# expect_y 00000002 "A_PLUS_B com ENA=0 (ignora A)"
+# FAIL A_PLUS_B com ENA=0 (ignora A) -> got 00000000 expected 00000002
+# force -deposit $TOP/ENA 1; run 1 ns
+# expect_y 00000003 "A_PLUS_B com ENA=1 (usa A)"
+# PASS A_PLUS_B com ENA=1 (usa A) -> Y=00000003
+# clear_ctrl
+# 
+# (15) SP <- 0 ; depois SP <- SP + 1 e ler de volta
+# ula ZERO; bsel H; run 1 ns
+# force -deposit $TOP/enSP 1; step 1; force -deposit $TOP/enSP 0                     ;# SP=0
+# clear_ctrl; run 1 ns
+# bsel SP; ula B_PLUS_1; run 1 ns
+# expect_y 00000001 "Y = SP + 1 (combinacional)"
+# PASS Y = SP + 1 (combinacional) -> Y=00000001
+# force -deposit $TOP/enSP 1; step 1; force -deposit $TOP/enSP 0
+# clear_ctrl; run 1 ns
+# bsel SP; ula PASS_B; run 1 ns
+# expect_y 00000001 "SP armazenado = 1"
+# PASS SP armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# (16) LV write/read (0x12345678)
+# force -deposit $TOP/MDR_in 16#12345678#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y 12345678 "LV write: Y fonte"
+# PASS LV write: Y fonte -> Y=12345678
+# force -deposit $TOP/enLV 1; step 1; force -deposit $TOP/enLV 0
+# clear_ctrl; run 1 ns
+# bsel LV; ula PASS_B; run 1 ns
+# expect_y 12345678 "LV readback"
+# PASS LV readback -> Y=12345678
+# clear_ctrl
+# 
+# (17) CPP write/read (0xCAFEBABE)
+# force -deposit $TOP/MDR_in 16#CAFEBABE#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y cafebabe "CPP write: Y fonte"
+# PASS CPP write: Y fonte -> Y=cafebabe
+# force -deposit $TOP/enCPP 1; step 1; force -deposit $TOP/enCPP 0
+# clear_ctrl; run 1 ns
+# bsel CPP; ula PASS_B; run 1 ns
+# expect_y cafebabe "CPP readback"
+# PASS CPP readback -> Y=cafebabe
+# clear_ctrl
+# 
+# (18) OPC write/read (0x00000009)
+# force -deposit $TOP/MDR_in 16#00000009#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y 00000009 "OPC write: Y fonte"
+# PASS OPC write: Y fonte -> Y=00000009
+# force -deposit $TOP/enOPC 1; step 1; force -deposit $TOP/enOPC 0
+# clear_ctrl; run 1 ns
+# bsel OPC; ula PASS_B; run 1 ns
+# expect_y 00000009 "OPC readback"
+# PASS OPC readback -> Y=00000009
+# clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 477 ns
+# echo ">> Testes concluídos (v6)  todas as medições ANTES do flanco."
+# >> Testes concluídos (v6)  todas as medições ANTES do flanco.
+# ===== fim =====
+# 
+# run 2 us
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:38:41 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:38:41 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 23:38:42 on Aug 23,2025, Elapsed time: 0:04:08
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 23:38:42 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate_v6_fix.do =====
+# Testes do MIC-1 (gates) medindo Y/C ANTES do flanco de clock.
+# Adições: diagnósticos no caso A_PLUS_B com ENA=0, leitura de Bprobe/A_H,
+# e matriz de combinações ENA/ENB para isolar bug de mask.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# ---- relógio 10 ns (50% duty) ----
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# ---- helpers ----
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# ULA (Figura 4.2)
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     A_AND_B  {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_OR_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     ZERO     {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# ---- localizar C (Cprobe/Cbus), Yprobe, Bprobe, A_H ----
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# 
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# set HAVE_BPROBE 0
+# 0
+# set BCANDS [find signals -r $TOP/*Bprobe*]
+# /mic1_draw/ww_Bprobe /mic1_draw/Bprobe
+# if {[llength $BCANDS] > 0} { set BPROBE [lindex $BCANDS 0]; set HAVE_BPROBE 1 }
+# 1
+# 
+# set HAVE_AH 0
+# 0
+# set AH_SIG [lindex [find signals -r $TOP/*A_H*] 0]
+# if {$AH_SIG ne ""} { set HAVE_AH 1 }
+# 
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} { echo "PASS $msg (Z=$z N=$n)" } \
+#   else { echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)" }
+# }
+# proc show_bus {tag} {
+#   set y ""; set c ""; set b ""; set a ""
+#   if {$::HAVE_YPROBE} { set y [examine -radix hex $::YPROBE] }
+#   if {$::HAVE_CBUS}   { set c [examine -radix hex $::CBUS] }
+#   if {$::HAVE_BPROBE} { set b [examine -radix hex $::BPROBE] }
+#   if {$::HAVE_AH}     { set a [examine -radix hex $::AH_SIG] }
+#   echo "$tag  Y=$y C=$c B=$b A_H=$a"
+# }
+# 
+# ===================== SEQUÊNCIA =====================
+# 
+# Reset
+# clear_ctrl
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# 
+# (1) TOS <- 2 (MBRs)  mede ANTES do flanco
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; run 1 ns
+# expect_y 00000002 "Y=MBRs"
+# PASS Y=MBRs -> Y=00000002
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000002 "TOS <= 2 (MBRs)"
+# PASS TOS <= 2 (MBRs) -> C=00000002
+# expect_flags 0 0 "TOS=2"
+# PASS TOS=2 (Z=0 N=0)
+# clear_ctrl
+# 
+# (2) MDR <- 3 (READ)
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# (3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# clear_ctrl
+# 
+# (4) TOS <- H + MDR => 5  mede ANTES do flanco
+# bsel MDR; ula A_PLUS_B; run 1 ns
+# expect_y 00000005 "Y = H + MDR"
+# PASS Y = H + MDR -> Y=00000005
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# expect_c 00000005 "C = H + MDR"
+# PASS C = H + MDR -> C=00000005
+# expect_flags 0 0 "Resultado 5"
+# PASS Resultado 5 (Z=0 N=0)
+# clear_ctrl
+# 
+# (5) PC <- 0; depois PC <- PC + 1  mede ANTES do flanco
+# ula ZERO; bsel H; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula B_PLUS_1; run 1 ns
+# expect_y 00000001 "Y = PC + 1 (combinacional)"
+# PASS Y = PC + 1 (combinacional) -> Y=00000001
+# force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula PASS_B; run 1 ns; expect_y 00000001 "PC armazenado = 1"
+# PASS PC armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# (6) SLL8 (TOS <<= 8)
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1; run 1 ns
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# PASS Y antes do shift (TOS=5) -> Y=00000005
+# expect_c 00000500 "C depois do shift (5<<8)"
+# PASS C depois do shift (5<<8) -> C=00000500
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SLL8 0
+# expect_flags 0 0 "SLL8 flags"
+# PASS SLL8 flags (Z=0 N=0)
+# clear_ctrl
+# 
+# (7) SRA1: -4 >> 1 => -2
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1; run 1 ns
+# expect_y fffffffc "Y antes do shift (-4)"
+# PASS Y antes do shift (-4) -> Y=fffffffc
+# expect_c fffffffe "C depois do shift (-4>>1)"
+# PASS C depois do shift (-4>>1) -> C=fffffffe
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SRA1 0
+# expect_flags 0 1 "SRA1 flags"
+# PASS SRA1 flags (Z=0 N=1)
+# clear_ctrl
+# 
+# (8) A_AND_B
+# force -deposit $TOP/MDR_in 16#F0F0F0F0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# force -deposit $TOP/MDR_in 16#0FF00FF0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_AND_B; run 1 ns
+# expect_y 00f000f0 "A_AND_B: Y"
+# PASS A_AND_B: Y -> Y=00f000f0
+# expect_c 00f000f0 "A_AND_B: C"
+# PASS A_AND_B: C -> C=00f000f0
+# expect_flags 0 0 "A_AND_B flags"
+# PASS A_AND_B flags (Z=0 N=0)
+# clear_ctrl
+# 
+# (9) A_OR_B
+# force -deposit $TOP/MDR_in 16#0000000F#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_OR_B; run 1 ns
+# expect_y f0f0f0ff "A_OR_B: Y"
+# PASS A_OR_B: Y -> Y=f0f0f0ff
+# expect_c f0f0f0ff "A_OR_B: C"
+# PASS A_OR_B: C -> C=f0f0f0ff
+# expect_flags 0 1 "A_OR_B flags (negativo)"
+# PASS A_OR_B flags (negativo) (Z=0 N=1)
+# clear_ctrl
+# 
+# (10) INVA + ADD + INC = (~A)+B+1 com B=0 -> 0; Z=1
+# ula ZERO; bsel H; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# clear_ctrl
+# force -deposit $TOP/F0 1; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 1; force -deposit $TOP/ENB 0
+# force -deposit $TOP/INVA 1; force -deposit $TOP/INC 1
+# run 1 ns
+# expect_y 00000000 "INVA+INC sobre A=0 -> 0"
+# PASS INVA+INC sobre A=0 -> 0 -> Y=00000000
+# expect_c 00000000 "INVA+INC: C"
+# PASS INVA+INC: C -> C=00000000
+# expect_flags 1 0 "INVA+INC flags (zero)"
+# PASS INVA+INC flags (zero) (Z=1 N=0)
+# clear_ctrl
+# 
+# (11) PASS_B negativo
+# force -deposit $TOP/MDR_in 16#80000000#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y 80000000 "PASS_B negativo: Y"
+# PASS PASS_B negativo: Y -> Y=80000000
+# expect_c 80000000 "PASS_B negativo: C"
+# PASS PASS_B negativo: C -> C=80000000
+# expect_flags 0 1 "PASS_B negativo: flags"
+# PASS PASS_B negativo: flags (Z=0 N=1)
+# clear_ctrl
+# 
+# (12) MBRs vs MBRu (0xFF)
+# force -deposit $TOP/MBR_in 16#FF#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; run 1 ns
+# expect_y ffffffff "MBRs (sign-extend 0xFF)"
+# PASS MBRs (sign-extend 0xFF) -> Y=ffffffff
+# expect_c ffffffff "MBRs -> C"
+# PASS MBRs -> C -> C=ffffffff
+# bsel MBRu; ula PASS_B; run 1 ns
+# expect_y 000000ff "MBRu (zero-extend 0xFF)"
+# PASS MBRu (zero-extend 0xFF) -> Y=000000ff
+# expect_c 000000ff "MBRu -> C"
+# PASS MBRu -> C -> C=000000ff
+# clear_ctrl
+# 
+# (13) ENB gating em PASS_B
+# force -deposit $TOP/MDR_in 16#00000001#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B
+# force -deposit $TOP/ENB 0; run 1 ns
+# expect_y 00000000 "ENB=0 mascara B (PASS_B)"
+# PASS ENB=0 mascara B (PASS_B) -> Y=00000000
+# force -deposit $TOP/ENB 1; run 1 ns
+# expect_y 00000001 "ENB=1 libera B (PASS_B)"
+# PASS ENB=1 libera B (PASS_B) -> Y=00000001
+# clear_ctrl
+# 
+# (14) *** DIAGNÓSTICO ENA/ENB em A_PLUS_B ***
+# Objetivo: provar que ENA deve apenas zerar A. H=1, B=2.
+# H <- 1
+# force -deposit $TOP/MDR_in 16#00000001#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# B <- 2
+# force -deposit $TOP/MDR_in 16#00000002#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_PLUS_B; run 1 ns
+# show_bus "A_PLUS_B base (ENA=1 ENB=1)"
+# A_PLUS_B base (ENA=1 ENB=1)  Y=00000003 C=00000003 B=00000002 A_H=
+# expect_y 00000003 "A_PLUS_B: ENA=1 ENB=1 -> 1+2=3"
+# PASS A_PLUS_B: ENA=1 ENB=1 -> 1+2=3 -> Y=00000003
+# 
+# Caso A: ENA=0 (A mascarado), ENB=1 -> Y deve ser B (=2)
+# force -deposit $TOP/ENA 0; run 1 ns
+# show_bus "A_PLUS_B com ENA=0 ENB=1"
+# A_PLUS_B com ENA=0 ENB=1  Y=00000000 C=00000000 B=00000002 A_H=
+# expect_y 00000002 "A_PLUS_B com ENA=0 (ignora A)"
+# FAIL A_PLUS_B com ENA=0 (ignora A) -> got 00000000 expected 00000002
+# 
+# Caso B: ENA=1, ENB=0 -> Y deve ser A (=1)
+# force -deposit $TOP/ENA 1; force -deposit $TOP/ENB 0; run 1 ns
+# show_bus "A_PLUS_B com ENA=1 ENB=0"
+# A_PLUS_B com ENA=1 ENB=0  Y=00000000 C=00000000 B=00000002 A_H=
+# expect_y 00000001 "A_PLUS_B com ENB=0 (ignora B)"
+# FAIL A_PLUS_B com ENB=0 (ignora B) -> got 00000000 expected 00000001
+# 
+# Caso C: ENA=0, ENB=0 -> Y deve ser 0
+# force -deposit $TOP/ENA 0; force -deposit $TOP/ENB 0; run 1 ns
+# show_bus "A_PLUS_B com ENA=0 ENB=0"
+# A_PLUS_B com ENA=0 ENB=0  Y=00000000 C=00000000 B=00000002 A_H=
+# expect_y 00000000 "A_PLUS_B com ENA=0 e ENB=0 (ambos mascarados)"
+# PASS A_PLUS_B com ENA=0 e ENB=0 (ambos mascarados) -> Y=00000000
+# 
+# Restaura ENB=1 para próximos testes
+# force -deposit $TOP/ENB 1
+# clear_ctrl
+# 
+# (15) SP <- 0 ; depois SP <- SP + 1 e ler de volta
+# ula ZERO; bsel H; run 1 ns
+# force -deposit $TOP/enSP 1; step 1; force -deposit $TOP/enSP 0
+# clear_ctrl; run 1 ns
+# bsel SP; ula B_PLUS_1; run 1 ns
+# expect_y 00000001 "Y = SP + 1 (combinacional)"
+# PASS Y = SP + 1 (combinacional) -> Y=00000001
+# force -deposit $TOP/enSP 1; step 1; force -deposit $TOP/enSP 0
+# clear_ctrl; run 1 ns
+# bsel SP; ula PASS_B; run 1 ns
+# expect_y 00000001 "SP armazenado = 1"
+# PASS SP armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# (16) LV write/read (0x12345678)
+# force -deposit $TOP/MDR_in 16#12345678#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y 12345678 "LV write: Y fonte"
+# PASS LV write: Y fonte -> Y=12345678
+# force -deposit $TOP/enLV 1; step 1; force -deposit $TOP/enLV 0
+# clear_ctrl; run 1 ns
+# bsel LV; ula PASS_B; run 1 ns
+# expect_y 12345678 "LV readback"
+# PASS LV readback -> Y=12345678
+# clear_ctrl
+# 
+# (17) CPP write/read (0xCAFEBABE)
+# force -deposit $TOP/MDR_in 16#CAFEBABE#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y cafebabe "CPP write: Y fonte"
+# PASS CPP write: Y fonte -> Y=cafebabe
+# force -deposit $TOP/enCPP 1; step 1; force -deposit $TOP/enCPP 0
+# clear_ctrl; run 1 ns
+# bsel CPP; ula PASS_B; run 1 ns
+# expect_y cafebabe "CPP readback"
+# PASS CPP readback -> Y=cafebabe
+# clear_ctrl
+# 
+# (18) OPC write/read (0x00000009)
+# force -deposit $TOP/MDR_in 16#00000009#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; run 1 ns
+# expect_y 00000009 "OPC write: Y fonte"
+# PASS OPC write: Y fonte -> Y=00000009
+# force -deposit $TOP/enOPC 1; step 1; force -deposit $TOP/enOPC 0
+# clear_ctrl; run 1 ns
+# bsel OPC; ula PASS_B; run 1 ns
+# expect_y 00000009 "OPC readback"
+# PASS OPC readback -> Y=00000009
+# clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 479 ns
+# echo ">> Testes concluídos (v6_fix)  medições ANTES do flanco + diagnóstico ENA/ENB."
+# >> Testes concluídos (v6_fix)  medições ANTES do flanco + diagnóstico ENA/ENB.
+# ===== fim =====
+# 
+# run 2 us
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:45:48 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:45:49 on Aug 23,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 23:45:50 on Aug 23,2025, Elapsed time: 0:07:08
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 23:45:50 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate_v7.do =====
+# MIC-1 (gates)  mede Y (pré-shifter) e C (pós-shifter) ANTES do flanco de clock.
+# Compatível com a tabela do Tanenbaum (F0 F1 ENA ENB INVA INC)  como no seu RTL.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# ---- relógio 10 ns (50% duty) ----
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# ---- helpers ----
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# ULA conforme tabela Tanenbaum (combinações usadas no seu RTL)
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     A              {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0} ;# 011000
+#     B              {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0} ;# 010100
+#     NOT_A          {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 0} ;# 011010
+#     NOT_B          {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0} ;# 101100
+#     A_PLUS_B       {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0} ;# 111100
+#     A_PLUS_B_PLUS1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1} ;# 111101
+#     A_PLUS_1       {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1} ;# 111001
+#     B_PLUS_1       {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1} ;# 110101
+#     B_MINUS_A      {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 1} ;# 111111
+#     B_MINUS_1      {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 0} ;# 110110
+#     NEG_A          {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 1} ;# 111011
+#     AND            {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0} ;# 001100
+#     OR             {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0} ;# 011100
+#     ZERO           {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0} ;# 010000
+#     ONE            {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1} ;# 110001
+#     MINUS_ONE      {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 0} ;# 110010
+#     default        {echo "ula: modo inválido '$mode'"; }
+#   }
+# }
+# 
+# localizar C (Cprobe/Cbus) e Yprobe
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# expect helpers
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} { echo "PASS $msg (Z=$z N=$n)" } \
+#   else { echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)" }
+# }
+# 
+# util p/ ver buses (opcional)
+# proc _v {s} { if {$s eq ""} {return ""} {return [examine -radix hex $s]} }
+# set BPROBE [lindex [find signals -r $TOP/*Bprobe*] 0]
+# /mic1_draw/ww_Bprobe
+# set AH_SIG [lindex [find signals -r $TOP/*A_H*] 0]
+# proc show_bus {tag} {
+#   echo "$tag  Y=[_v $::YPROBE] C=[_v $::CBUS] B=[_v $::BPROBE] A_H=[_v $::AH_SIG]"
+# }
+# 
+# ===================== SEQUÊNCIA =====================
+# 
+# Reset
+# clear_ctrl
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# 
+# (1) Construir TOS=5 (2 via MBRs + 3 via MDR)  igual aos testes anteriores
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula B; run 1 ns
+# expect_y 00000002 "Y=MBRs"; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# PASS Y=MBRs -> Y=00000002
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; run 1 ns
+# expect_y 00000005 "Y=H+MDR (5)"; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# PASS Y=H+MDR (5) -> Y=00000005
+# clear_ctrl
+# 
+# (2) PC <- 0 ; depois PC <- PC + 1 (mede ANTES do flanco)
+# ula ZERO; bsel H; force -deposit $TOP/enH 1;  step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula B_PLUS_1; run 1 ns
+# expect_y 00000001 "Y = PC + 1 (combinacional)"
+# PASS Y = PC + 1 (combinacional) -> Y=00000001
+# force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula B; run 1 ns; expect_y 00000001 "PC armazenado = 1"
+# PASS PC armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# (3) SLL8: mede Y pré / C pós-shift
+# bsel TOS; ula B; force -deposit $TOP/SLL8 1; run 1 ns
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# PASS Y antes do shift (TOS=5) -> Y=00000005
+# expect_c 00000500 "C depois do shift (5<<8)"
+# PASS C depois do shift (5<<8) -> C=00000500
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SLL8 0
+# expect_flags 0 0 "SLL8 flags"; clear_ctrl
+# PASS SLL8 flags (Z=0 N=0)
+# 
+# (4) SRA1: -4 >> 1 => -2
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel TOS; ula B; force -deposit $TOP/SRA1 1; run 1 ns
+# expect_y fffffffc "Y antes do shift (-4)"
+# PASS Y antes do shift (-4) -> Y=fffffffc
+# expect_c fffffffe "C depois do shift (-4>>1)"
+# PASS C depois do shift (-4>>1) -> C=fffffffe
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SRA1 0
+# expect_flags 0 1 "SRA1 flags"; clear_ctrl
+# PASS SRA1 flags (Z=0 N=1)
+# 
+# (5) ALU lógica: AND / OR
+# H <- F0F0F0F0 ; MDR <- 0FF00FF0
+# force -deposit $TOP/MDR_in 16#F0F0F0F0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# force -deposit $TOP/MDR_in 16#0FF00FF0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula AND; run 1 ns
+# expect_y 00f000f0 "AND: Y"; expect_c 00f000f0 "AND: C"; expect_flags 0 0 "AND flags"
+# PASS AND: Y -> Y=00f000f0
+# PASS AND: C -> C=00f000f0
+# PASS AND flags (Z=0 N=0)
+# bsel MDR; ula OR;  run 1 ns
+# expect_y f0f0f0ff "OR: Y";  expect_c f0f0f0ff "OR: C"; expect_flags 0 1 "OR flags (negativo)"
+# FAIL OR: Y -> got fff0fff0 expected f0f0f0ff
+# FAIL OR: C -> got fff0fff0 expected f0f0f0ff
+# PASS OR flags (negativo) (Z=0 N=1)
+# clear_ctrl
+# 
+# (6) Constantes ZERO / ONE / MINUS_ONE
+# ula ZERO; run 1 ns
+# expect_y 00000000 "ZERO"; expect_c 00000000 "ZERO C"; expect_flags 1 0 "ZERO flags"
+# PASS ZERO -> Y=00000000
+# PASS ZERO C -> C=00000000
+# PASS ZERO flags (Z=1 N=0)
+# ula ONE; run 1 ns
+# expect_y 00000001 "ONE";  expect_c 00000001 "ONE C";  expect_flags 0 0 "ONE flags"
+# PASS ONE -> Y=00000001
+# PASS ONE C -> C=00000001
+# PASS ONE flags (Z=0 N=0)
+# ula MINUS_ONE; run 1 ns
+# expect_y ffffffff "MINUS_ONE"; expect_c ffffffff "MINUS_ONE C"; expect_flags 0 1 "MINUS_ONE flags"
+# PASS MINUS_ONE -> Y=ffffffff
+# PASS MINUS_ONE C -> C=ffffffff
+# PASS MINUS_ONE flags (Z=0 N=1)
+# clear_ctrl
+# 
+# (7) Passes e complementos segundo a tabela
+# Preparar A=H=0000000A, B=MDR=00000003
+# force -deposit $TOP/MDR_in 16#0000000A#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0     ;# A=10
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0 ;# B=3
+# 
+# bsel MDR; ula A; run 1 ns        ;# A
+# expect_y 0000000a "A (011000)"
+# PASS A (011000) -> Y=0000000a
+# bsel MDR; ula B; run 1 ns        ;# B
+# expect_y 00000003 "B (010100)"
+# PASS B (010100) -> Y=00000003
+# bsel MDR; ula NOT_A; run 1 ns
+# expect_y fffffff5 "NOT A (011010)"
+# PASS NOT A (011010) -> Y=fffffff5
+# bsel MDR; ula NOT_B; run 1 ns
+# expect_y fffffffc "NOT B (101100)"
+# PASS NOT B (101100) -> Y=fffffffc
+# clear_ctrl
+# 
+# (8) Aritmética segundo a tabela
+# A=H=00000002 ; B=MDR=00000005
+# force -deposit $TOP/MDR_in 16#00000002#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0     ;# A=2
+# force -deposit $TOP/MDR_in 16#00000005#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0 ;# B=5
+# 
+# bsel MDR; ula A_PLUS_B;       run 1 ns; expect_y 00000007 "A+B (111100)"
+# PASS A+B (111100) -> Y=00000007
+# bsel MDR; ula A_PLUS_B_PLUS1; run 1 ns; expect_y 00000008 "A+B+1 (111101)"
+# PASS A+B+1 (111101) -> Y=00000008
+# bsel MDR; ula A_PLUS_1;       run 1 ns; expect_y 00000003 "A+1 (111001)"
+# PASS A+1 (111001) -> Y=00000003
+# bsel MDR; ula B_PLUS_1;       run 1 ns; expect_y 00000006 "B+1 (110101)"
+# PASS B+1 (110101) -> Y=00000006
+# bsel MDR; ula B_MINUS_A;      run 1 ns; expect_y 00000003 "B-A (111111)"
+# PASS B-A (111111) -> Y=00000003
+# bsel MDR; ula B_MINUS_1;      run 1 ns; expect_y 00000004 "B-1 (110110)"
+# PASS B-1 (110110) -> Y=00000004
+# bsel MDR; ula NEG_A;          run 1 ns; expect_y fffffffe "-A (111011)"
+# PASS -A (111011) -> Y=fffffffe
+# clear_ctrl
+# 
+# (9) MBRs vs MBRu (0xFF)
+# force -deposit $TOP/MBR_in 16#FF#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula B; run 1 ns
+# expect_y ffffffff "MBRs (sign-extend 0xFF)"; expect_c ffffffff "MBRs -> C"
+# PASS MBRs (sign-extend 0xFF) -> Y=ffffffff
+# PASS MBRs -> C -> C=ffffffff
+# bsel MBRu; ula B; run 1 ns
+# expect_y 000000ff "MBRu (zero-extend 0xFF)"; expect_c 000000ff "MBRu -> C"
+# PASS MBRu (zero-extend 0xFF) -> Y=000000ff
+# PASS MBRu -> C -> C=000000ff
+# clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 376 ns
+# echo ">> Testes concluídos (v7)  todos alinhados com a tabela do Tanenbaum e medidos ANTES do flanco."
+# >> Testes concluídos (v7)  todos alinhados com a tabela do Tanenbaum e medidos ANTES do flanco.
+# ===== fim =====
+# 
+# run 2 us
+do MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 23:50:43 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 23:50:43 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 23:50:43 on Aug 23,2025, Elapsed time: 0:04:53
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 23:50:43 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#347
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#219
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#346
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#342
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#142
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#18
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#358
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#22
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#288
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#115
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#29
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#41
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#91
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#259
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#64
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#216
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#340
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#233
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#89
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#339
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#124
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#185
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#190
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#198
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#338
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#254
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#266
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#348
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#270
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#272
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#291
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#353
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#365
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do (com Yprobe/Bprobe/Cprobe) =======
+# onerror {resume}
+# set TOP sim:/mic1_draw   ;# troque se seu topo tiver outro nome
+# sim:/mic1_draw
+# 
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+# Aparência
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos)
+# foreach {label idx} {B_H 0 B_PC 1 B_MDR 2 B_MBRs 3 B_MBRu 4 B_SP 5 B_LV 6 B_CPP 7 B_TOS 8 B_OPC 9} {
+#   if {[llength [find signals $TOP/bsel_oh\($idx\)]]} {
+#     add wave -noupdate -group {BSEL_onehot} -radix binary -label $label $TOP/bsel_oh\($idx\)
+#   }
+# }
+# 
+# 4) ULA
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0 $TOP/F1 $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória"
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# 8) BUSES  tenta pinos/sondas
+# proc _add_first {pattern group radix} {
+#   set L [find signals -r $pattern]
+#   if {[llength $L] > 0} { add wave -noupdate -group $group -radix $radix [lindex $L 0] }
+# }
+# _add_first "$TOP/*A_H*"    BUSES hex
+# _add_first "$TOP/*Bbus*"   BUSES hex
+# _add_first "$TOP/*Cbus*"   BUSES hex
+# _add_first "$TOP/*Bprobe*" BUSES hex
+# _add_first "$TOP/*Cprobe*" BUSES hex
+# _add_first "$TOP/*Yprobe*" BUSES hex
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# echo ">> group_waves: pronto."
+# >> group_waves: pronto.
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_debug_y.do
+# ===== stim_debug_y.do =====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# Relógio 10 ns (50% duty)
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# 
+# Helpers
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run 10 ns } }
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   bsel_none
+#   force -deposit sim:/mic1_draw/bsel_oh($IDX($src)) 1
+# }
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit sim:/mic1_draw/F0 0; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 0; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#     A_PLUS_B {force -deposit sim:/mic1_draw/F0 1; force -deposit sim:/mic1_draw/F1 1; force -deposit sim:/mic1_draw/ENA 1; force -deposit sim:/mic1_draw/ENB 1; force -deposit sim:/mic1_draw/INVA 0; force -deposit sim:/mic1_draw/INC 0}
+#   }
+# }
+# 
+# Reset
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# bsel_none
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# Monta TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#; force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel_none
+# 
+# Seleciona TOS no B-bus e deixa ULA em PASS_B
+# bsel TOS; ula PASS_B
+# 
+# Descobre os pinos/sondas
+# set YSIG [lindex [concat [find signals -r $TOP/*Yprobe*]] 0]
+# /mic1_draw/Yprobe
+# set CSIG [lindex [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]] 0]
+# /mic1_draw/Cprobe
+# puts ">> Usando Y=$YSIG   C=$CSIG"
+# 
+# 1) Antes do shift
+# run 1 ns
+# set y0 [examine -radix hex $YSIG]
+# 00000005
+# set c0 [examine -radix hex $CSIG]
+# 00000005
+# echo "ANTES:  Y=$y0   C=$c0   (esperado: Y=00000005, C=00000005)"
+# ANTES:  Y=00000005   C=00000005   (esperado: Y=00000005, C=00000005)
+# 
+# 2) Liga SLL8
+# force -deposit $TOP/SLL8 1
+# run 1 ns
+# set y1 [examine -radix hex $YSIG]
+# 00000005
+# set c1 [examine -radix hex $CSIG]
+# 00000500
+# echo "DEPOIS: Y=$y1   C=$c1   (esperado: Y=00000005, C=00000500)"
+# DEPOIS: Y=00000005   C=00000500   (esperado: Y=00000005, C=00000500)
+# 
+# 3) Quem dirige essas nets?  (comando correto no Questa)
+# if {$YSIG ne ""} { echo "Drivers de Y:"; drivers $YSIG }
+# Drivers de Y:
+# Drivers for /mic1_draw/Yprobe(31:0):
+#    32'h00000005  : Signal /mic1_draw/Yprobe
+#      32'h00000005 : Driver /mic1_draw/line__1600
+# 
+# if {$CSIG ne ""} { echo "Drivers de C:"; drivers $CSIG }
+# Drivers de C:
+# Drivers for /mic1_draw/Cprobe(31:0):
+#    32'h00000500  : Signal /mic1_draw/Cprobe
+#      32'h00000500 : Driver /mic1_draw/line__1599
+# 
+# 
+# update
+# ===== fim =====
+# 
+# do stim_mic1_gate.do
+# ===== stim_mic1_gate_v7.do =====
+# Testes MIC-1 (pós-synth) medindo Y/C **ANTES** do flanco de clock.
+# Alinhado à Figura 4.2 (Tanenbaum 6ª ed.). Inclui PC+1, SLL8, SRA1,
+# lógicas AND/OR, constantes, passes/complementos e aritmética.
+# 
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# ---- relógio 10 ns (50% duty) ----
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# force -freeze $TOP/clk 0 0, 1 $TH -repeat $T
+# 
+# ---- helpers ----
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# 
+# proc bsel_none {} {
+#   for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 }
+# }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# 
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# 
+# ---- ULA (mapa exato da Figura 4.2) ----
+# F0 F1 ENA ENB INVA INC
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     A               {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B               {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     NOT_A           {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 0}
+#     NOT_B           {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B        {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B_PLUS1  {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     A_PLUS_1        {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     B_PLUS_1        {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     B_MINUS_A       {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 1}
+#     B_MINUS_1       {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 0}
+#     NEG_A           {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 1}
+#     AND             {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     OR              {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     ZERO            {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     ONE             {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     MINUS_ONE       {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 0; force -deposit $::TOP/INVA 1; force -deposit $::TOP/INC 0}
+#     default         {echo "ula: modo desconhecido '$mode'"; }
+#   }
+# }
+# 
+# ---- localizar C (Cprobe/Cbus) e Yprobe ----
+# set HAVE_CBUS 0
+# 0
+# set CANDS [concat [find signals -r $TOP/*Cprobe*] [find signals -r $TOP/*Cbus*]]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# if {[llength $CANDS] > 0} { set CBUS [lindex $CANDS 0]; set HAVE_CBUS 1 }
+# 1
+# 
+# set HAVE_YPROBE 0
+# 0
+# set YCANDS [find signals -r $TOP/*Yprobe*]
+# /mic1_draw/Yprobe /mic1_draw/ww_Yprobe
+# if {[llength $YCANDS] > 0} { set YPROBE [lindex $YCANDS 0]; set HAVE_YPROBE 1 }
+# 1
+# 
+# proc _hexnorm {h} { return [string tolower [string map -nocase {16# "" # ""} $h]] }
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} { echo "SKIP (Cbus não visível): $msg"; return }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_y {hex msg} {
+#   if {!$::HAVE_YPROBE} { echo "SKIP (Yprobe não exposto): $msg"; return }
+#   set v [string tolower [examine -radix hex $::YPROBE]]
+#   set e [_hexnorm $hex]
+#   if {$v eq $e} { echo "PASS $msg -> Y=$v" } else { echo "FAIL $msg -> got $v expected $e" }
+# }
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} { echo "PASS $msg (Z=$z N=$n)" } \
+#   else { echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)" }
+# }
+# 
+# ===================== SEQUÊNCIA =====================
+# 
+# Reset
+# clear_ctrl
+# force -deposit $TOP/rst 1; step 2
+# force -deposit $TOP/rst 0; step 1
+# 
+# (1) Construir TOS=5 (2 via MBRs + 3 via MDR)
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula B; run 1 ns
+# expect_y 00000002 "Y=MBRs"; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# PASS Y=MBRs -> Y=00000002
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel TOS; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# bsel MDR; ula A_PLUS_B; run 1 ns
+# expect_y 00000005 "Y=H+MDR (5)"; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# PASS Y=H+MDR (5) -> Y=00000005
+# clear_ctrl
+# 
+# (2) PC <- 0 ; depois PC <- PC + 1 (mede ANTES do flanco)
+# ula ZERO; bsel H; force -deposit $TOP/enH 1;  step 1; force -deposit $TOP/enH 0
+# ula ZERO; bsel H; force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula B_PLUS_1; run 1 ns
+# expect_y 00000001 "Y = PC + 1 (combinacional)"
+# PASS Y = PC + 1 (combinacional) -> Y=00000001
+# force -deposit $TOP/enPC 1; step 1; force -deposit $TOP/enPC 0
+# clear_ctrl; run 1 ns
+# bsel PC; ula B; run 1 ns; expect_y 00000001 "PC armazenado = 1"
+# PASS PC armazenado = 1 -> Y=00000001
+# clear_ctrl
+# 
+# (3) SLL8: mede Y pré / C pós-shift
+# bsel TOS; ula B; force -deposit $TOP/SLL8 1; run 1 ns
+# expect_y 00000005 "Y antes do shift (TOS=5)"
+# PASS Y antes do shift (TOS=5) -> Y=00000005
+# expect_c 00000500 "C depois do shift (5<<8)"
+# PASS C depois do shift (5<<8) -> C=00000500
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SLL8 0
+# expect_flags 0 0 "SLL8 flags"; clear_ctrl
+# PASS SLL8 flags (Z=0 N=0)
+# 
+# (4) SRA1: -4 >> 1 => -2
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# bsel TOS; ula B; force -deposit $TOP/SRA1 1; run 1 ns
+# expect_y fffffffc "Y antes do shift (-4)"
+# PASS Y antes do shift (-4) -> Y=fffffffc
+# expect_c fffffffe "C depois do shift (-4>>1)"
+# PASS C depois do shift (-4>>1) -> C=fffffffe
+# force -deposit $TOP/enTOS 1; step 1; force -deposit $TOP/enTOS 0
+# force -deposit $TOP/SRA1 0
+# expect_flags 0 1 "SRA1 flags"; clear_ctrl
+# PASS SRA1 flags (Z=0 N=1)
+# 
+# (5) ALU lógica: AND / OR
+# H <- F0F0F0F0 ; MDR <- 0FF00FF0
+# force -deposit $TOP/MDR_in 16#F0F0F0F0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# force -deposit $TOP/MDR_in 16#0FF00FF0#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula AND; run 1 ns
+# expect_y 00f000f0 "AND: Y"; expect_c 00f000f0 "AND: C"; expect_flags 0 0 "AND flags"
+# PASS AND: Y -> Y=00f000f0
+# PASS AND: C -> C=00f000f0
+# PASS AND flags (Z=0 N=0)
+# bsel MDR; ula OR;  run 1 ns
+# CORREÇÃO: OR correto com A=F0F0F0F0, B=0FF00FF0 é FFF0FFF0
+# expect_y fff0fff0 "OR: Y";  expect_c fff0fff0 "OR: C"; expect_flags 0 1 "OR flags (negativo)"
+# PASS OR: Y -> Y=fff0fff0
+# PASS OR: C -> C=fff0fff0
+# PASS OR flags (negativo) (Z=0 N=1)
+# clear_ctrl
+# 
+# (6) Constantes ZERO / ONE / MINUS_ONE
+# ula ZERO; run 1 ns
+# expect_y 00000000 "ZERO"; expect_c 00000000 "ZERO C"; expect_flags 1 0 "ZERO flags"
+# PASS ZERO -> Y=00000000
+# PASS ZERO C -> C=00000000
+# PASS ZERO flags (Z=1 N=0)
+# ula ONE; run 1 ns
+# expect_y 00000001 "ONE";  expect_c 00000001 "ONE C";  expect_flags 0 0 "ONE flags"
+# PASS ONE -> Y=00000001
+# PASS ONE C -> C=00000001
+# PASS ONE flags (Z=0 N=0)
+# ula MINUS_ONE; run 1 ns
+# expect_y ffffffff "MINUS_ONE"; expect_c ffffffff "MINUS_ONE C"; expect_flags 0 1 "MINUS_ONE flags"
+# PASS MINUS_ONE -> Y=ffffffff
+# PASS MINUS_ONE C -> C=ffffffff
+# PASS MINUS_ONE flags (Z=0 N=1)
+# clear_ctrl
+# 
+# (7) Passes e complementos
+# A=H=0000000A, B=MDR=00000003
+# force -deposit $TOP/MDR_in 16#0000000A#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# force -deposit $TOP/MDR_in 16#00000003#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A;      run 1 ns; expect_y 0000000a "A (011000)"
+# PASS A (011000) -> Y=0000000a
+# bsel MDR; ula B;      run 1 ns; expect_y 00000003 "B (010100)"
+# PASS B (010100) -> Y=00000003
+# bsel MDR; ula NOT_A;  run 1 ns; expect_y fffffff5 "NOT A (011010)"
+# PASS NOT A (011010) -> Y=fffffff5
+# bsel MDR; ula NOT_B;  run 1 ns; expect_y fffffffc "NOT B (101100)"
+# PASS NOT B (101100) -> Y=fffffffc
+# clear_ctrl
+# 
+# (8) Aritmética
+# A=H=00000002 ; B=MDR=00000005
+# force -deposit $TOP/MDR_in 16#00000002#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula B; force -deposit $TOP/enH 1; step 1; force -deposit $TOP/enH 0
+# force -deposit $TOP/MDR_in 16#00000005#; force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula A_PLUS_B;       run 1 ns; expect_y 00000007 "A+B (111100)"
+# PASS A+B (111100) -> Y=00000007
+# bsel MDR; ula A_PLUS_B_PLUS1; run 1 ns; expect_y 00000008 "A+B+1 (111101)"
+# PASS A+B+1 (111101) -> Y=00000008
+# bsel MDR; ula A_PLUS_1;       run 1 ns; expect_y 00000003 "A+1 (111001)"
+# PASS A+1 (111001) -> Y=00000003
+# bsel MDR; ula B_PLUS_1;       run 1 ns; expect_y 00000006 "B+1 (110101)"
+# PASS B+1 (110101) -> Y=00000006
+# bsel MDR; ula B_MINUS_A;      run 1 ns; expect_y 00000003 "B-A (111111)"
+# PASS B-A (111111) -> Y=00000003
+# bsel MDR; ula B_MINUS_1;      run 1 ns; expect_y 00000004 "B-1 (110110)"
+# PASS B-1 (110110) -> Y=00000004
+# bsel MDR; ula NEG_A;          run 1 ns; expect_y fffffffe "-A (111011)"
+# PASS -A (111011) -> Y=fffffffe
+# clear_ctrl
+# 
+# (9) MBRs vs MBRu (0xFF)
+# force -deposit $TOP/MBR_in 16#FF#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula B; run 1 ns
+# expect_y ffffffff "MBRs (sign-extend 0xFF)"; expect_c ffffffff "MBRs -> C"
+# PASS MBRs (sign-extend 0xFF) -> Y=ffffffff
+# PASS MBRs -> C -> C=ffffffff
+# bsel MBRu; ula B; run 1 ns
+# expect_y 000000ff "MBRu (zero-extend 0xFF)"; expect_c 000000ff "MBRu -> C"
+# PASS MBRu (zero-extend 0xFF) -> Y=000000ff
+# PASS MBRu -> C -> C=000000ff
+# clear_ctrl
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 376 ns
+# echo ">> Testes concluídos (v7)  todos alinhados com a tabela do Tanenbaum e medidos ANTES do flanco."
+# >> Testes concluídos (v7)  todos alinhados com a tabela do Tanenbaum e medidos ANTES do flanco.
+# ===== fim =====
+# 
+# run 2 us
+# End time: 23:55:02 on Aug 23,2025, Elapsed time: 0:04:19
+# Errors: 0, Warnings: 0

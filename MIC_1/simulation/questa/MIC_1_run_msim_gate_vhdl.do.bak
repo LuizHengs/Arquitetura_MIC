@@ -1,0 +1,18 @@
+transcript on
+if {[file exists gate_work]} {
+	vdel -lib gate_work -all
+}
+vlib gate_work
+vmap work gate_work
+
+vcom -93 -work work {MIC_1.vho}
+vsim -t ns work.mic1_draw 
+
+# (2) (opcional) agrupar as ondas
+do group_waves.do
+
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1…)
+do stim_mic1_gate.do
+do scan_bsel_mbrs.do
+run 2 us
+

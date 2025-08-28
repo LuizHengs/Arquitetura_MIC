@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 mlopt
+!s11e vcom 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/questa
+T_opt
+!s110 1756001911
+VhCBU_^QMJ7Q@?Vn`HlOJk3
+04 9 9 work mic1_draw structure 1
+=1-000ae431a4f1-68aa7675-de002-84bd
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U1 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+R1
+Emic1_draw
+Z2 w1756001897
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 Q[8[AH3RWK`@@53FFIdSQ1
+Z4 DPx8 cyclonev 19 cyclonev_components 0 22 M1Bm0<FVlb`lDag^_b22S2
+Z5 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 j=R<[?N65j>_^9>N3LZ@O1
+Z6 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z7 DPx6 altera 11 dffeas_pack 0 22 Z6Df0YUMimcBlDK61l?KR3
+Z8 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z11 DPx6 altera 28 altera_primitives_components 0 22 Z06gDT=8W=YNhNg@C=?S02
+!i122 0
+R1
+Z12 8MIC_1.vho
+Z13 FMIC_1.vho
+l0
+L39 1
+V[]PnSfT8R5CdFOSD?bNSD0
+!s100 eVd^EfFWFfo9@;z=O]E;K1
+Z14 OL;C;2024.3;79
+31
+Z15 !s110 1756003843
+!i10b 1
+Z16 !s108 1756003843.000000
+Z17 !s90 -reportprogress|300|-93|-work|work|MIC_1.vho|
+!s107 MIC_1.vho|
+!i113 0
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+DEx4 work 9 mic1_draw 0 22 []PnSfT8R5CdFOSD?bNSD0
+!i122 0
+l1570
+L245 20174
+V>bOgD;XUN`3H<Wfn3HQ@=0
+!s100 o2[g?X<;8TIiYFda]d3lM1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+Z20 !s107 MIC_1.vho|
+!i113 0
+R18
+R19

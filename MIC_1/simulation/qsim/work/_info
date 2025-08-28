@@ -1,0 +1,250 @@
+m255
+K4
+z2
+!s12c _opt2
+Z0 !s99 mlopt
+!s12c _opt1
+Z1 !s99 nomlopt
+!s12c _opt
+R1
+!s11e vcom 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim
+T_opt
+!s110 1755721940
+VFf9ojl8aBSR`6and8Wijh0
+04 17 10 work mic_1_vhd_vec_tst mic_1_arch 1
+=1-000ae431a4f1-68a630d4-10003-ace2
+R1
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM10U2 
+Z6 !s135 nogc
+Z7 o-quiet -auto_acc_if_foreign -work work -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2024.3;79
+R2
+T_opt1
+!s110 1755722580
+VkB`cEJ`[LkRn4Z<W1XSdI3
+04 5 9 work mic_1 structure 1
+=1-000ae431a4f1-68a63354-7600f-b2c2
+R1
+R3
+R4
+!s124 OEM10U1 
+R6
+o-quiet -auto_acc_if_foreign -work work +acc
+R8
+n@_opt1
+R9
+R2
+T_opt2
+Z10 !s110 1755815457
+VDY`ckK>;ALMNa>j2>5P^;2
+04 21 14 work mic1_draw_vhd_vec_tst mic1_draw_arch 1
+=1-000ae431a4f1-68a79e21-3c170-8c4c
+R0
+R3
+R4
+R5
+R6
+R7
+R8
+n@_opt2
+R9
+R2
+Emic1_draw
+Z11 w1755815473
+Z12 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 Q[8[AH3RWK`@@53FFIdSQ1
+Z13 DPx8 cyclonev 19 cyclonev_components 0 22 M1Bm0<FVlb`lDag^_b22S2
+Z14 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 j=R<[?N65j>_^9>N3LZ@O1
+Z15 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z16 DPx6 altera 11 dffeas_pack 0 22 Z6Df0YUMimcBlDK61l?KR3
+Z17 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z18 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z19 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z20 DPx6 altera 28 altera_primitives_components 0 22 Z06gDT=8W=YNhNg@C=?S02
+!i122 24
+R2
+Z21 8MIC_1.vho
+Z22 FMIC_1.vho
+l0
+L39 1
+VY:]Veb@@jkB4dK=AITUn=3
+!s100 YLaT;z0=KZY5>Q_n^[8Gg1
+Z23 OL;C;2024.3;79
+32
+Z24 !s110 1755815474
+!i10b 1
+Z25 !s108 1755815474.000000
+Z26 !s90 -work|work|MIC_1.vho|
+Z27 !s107 MIC_1.vho|
+!i113 0
+Z28 o-work work
+Z29 tExplicit 1 CvgOpt 0
+Astructure
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+DEx4 work 9 mic1_draw 0 22 Y:]Veb@@jkB4dK=AITUn=3
+!i122 24
+l1413
+L146 18549
+Vj;<h;jGkRF^j2aLKS<d201
+!s100 DmDziB9]KG6o_TbgKE0Qk2
+R23
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R28
+R29
+Emic1_draw_vhd_vec_tst
+Z30 w1755815472
+R18
+R19
+!i122 25
+R2
+Z31 8Waveform2.vwf.vht
+Z32 FWaveform2.vwf.vht
+l0
+Z33 L32 1
+VCN0ZPogTi?J27e7nNZUVn2
+!s100 1Ohbh9VWU[bf9O<zMo_H80
+R23
+32
+R24
+!i10b 1
+R25
+Z34 !s90 -work|work|Waveform2.vwf.vht|
+Z35 !s107 Waveform2.vwf.vht|
+!i113 0
+R28
+R29
+Amic1_draw_arch
+R18
+R19
+Z36 DEx4 work 21 mic1_draw_vhd_vec_tst 0 22 CN0ZPogTi?J27e7nNZUVn2
+!i122 25
+l93
+Z37 L34 538
+Z38 VfSI11V9cdI<eVO1<EVa>12
+Z39 !s100 ?Zb>lgI:>D:cNJ?D7iP2a0
+R23
+32
+R24
+!i10b 1
+R25
+R34
+R35
+!i113 0
+R28
+R29
+Emic_1
+Z40 w1755722621
+R15
+R12
+R17
+R13
+R18
+R19
+R14
+!i122 18
+R2
+R21
+R22
+l0
+L37 1
+VmDT`AL9N:b1Jnf1WonVb:0
+!s100 _8Ik9Ke4;MBoa5AM=@CFM0
+R23
+32
+Z41 !s110 1755722622
+!i10b 1
+Z42 !s108 1755722622.000000
+R26
+R27
+!i113 0
+R28
+R29
+Astructure
+R15
+R12
+R17
+R13
+R18
+R19
+R14
+DEx4 work 5 mic_1 0 22 mDT`AL9N:b1Jnf1WonVb:0
+!i122 18
+l71
+L51 94
+VYP_zaKa_a1C1:CdADU?mm3
+!s100 N593_[P5DWoKA@<CgMgnl1
+R23
+32
+R41
+!i10b 1
+R42
+R26
+R27
+!i113 0
+R28
+R29
+Emic_1_vhd_vec_tst
+Z43 w1755722620
+R18
+R19
+!i122 19
+R2
+Z44 8Waveform1.vwf.vht
+Z45 FWaveform1.vwf.vht
+l0
+R33
+V4Xm]k4`W;75BFL<e=jZgE3
+!s100 W8GC5BYPBP<BgMzzPVJ9`3
+R23
+32
+R41
+!i10b 1
+R42
+Z46 !s90 -work|work|Waveform1.vwf.vht|
+Z47 !s107 Waveform1.vwf.vht|
+!i113 0
+R28
+R29
+Amic_1_arch
+R18
+R19
+DEx4 work 17 mic_1_vhd_vec_tst 0 22 4Xm]k4`W;75BFL<e=jZgE3
+!i122 19
+l47
+L34 58
+VF?4FJYhh1ZjKCk9U8cZ[f0
+!s100 UX4hKUP`AA>:0eQX354^V3
+R23
+32
+R41
+!i10b 1
+R42
+R46
+R47
+!i113 0
+R28
+R29

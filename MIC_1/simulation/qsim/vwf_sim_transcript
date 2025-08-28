@@ -1,0 +1,81 @@
+Determining the location of the ModelSim executable...
+
+Using: /opt/intelFPGA_lite/24.1std/questa_fse/linux_x86_64/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIC_1 -c MIC_1 --vector_source="/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/Waveform2.vwf" --testbench_file="/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim/Waveform2.vwf.vht"
+
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.    Info: Your use of Altera Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Altera Program License     Info: Subscription Agreement, the Altera Quartus Prime License Agreement,    Info: the Altera IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Altera and sold by Altera or its authorized distributors.  Please    Info: refer to the Altera Software License Subscription Agreements     Info: on the Quartus Prime software download page.    Info: Processing started: Thu Aug 21 19:30:54 2025Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIC_1 -c MIC_1 --vector_source=/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/Waveform2.vwf --testbench_file=/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim/Waveform2.vwf.vhtWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim/" MIC_1 -c MIC_1
+
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.    Info: Your use of Altera Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Altera Program License     Info: Subscription Agreement, the Altera Quartus Prime License Agreement,    Info: the Altera IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Altera and sold by Altera or its authorized distributors.  Please    Info: refer to the Altera Software License Subscription Agreements     Info: on the Quartus Prime software download page.    Info: Processing started: Thu Aug 21 19:30:55 2025Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim/ MIC_1 -c MIC_1Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file MIC_1.vho in folder "/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 677 megabytes    Info: Processing ended: Thu Aug 21 19:30:56 2025    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim/MIC_1.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+/opt/intelFPGA_lite/24.1std/questa_fse/linux_x86_64//vsim -c -do MIC_1.do
+
+Reading pref.tcl
+# 2024.3
+# do MIC_1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:30:56 on Aug 21,2025
+# vcom -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 19:30:57 on Aug 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 19:30:57 on Aug 21,2025
+# vcom -work work Waveform2.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164# -- Compiling entity mic1_draw_vhd_vec_tst
+# -- Compiling architecture mic1_draw_arch of mic1_draw_vhd_vec_tst
+# End time: 19:30:57 on Aug 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mic1_draw_vhd_vec_tst # Start time: 19:30:57 on Aug 21,2025# ** Note: (vsim-3812) Design is being optimized...# //  Questa Intel Starter FPGA Edition-64# //  Version 2024.3 linux_x86_64 Sep 10 2024# //# // Unpublished work. Copyright 2024 Siemens# //# // This material contains trade secrets or otherwise confidential information# // owned by Siemens Industry Software Inc. or its affiliates (collectively,# // "SISW"), or its licensors. Access to and use of this information is strictly# // limited as set forth in the Customer's applicable agreements with SISW.# //# // This material may not be copied, distributed, or otherwise disclosed outside# // of the Customer's facilities without the express written permission of SISW,# // and may not be used in any way not expressly authorized by SISW.# //
+# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.mic1_draw_vhd_vec_tst(mic1_draw_arch)#1# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading altera_lnsim.altera_lnsim_components# Loading cyclonev.cyclonev_atom_pack(body)# Loading cyclonev.cyclonev_components# Loading work.mic1_draw(structure)#1# Loading ieee.std_logic_arith(body)# Loading cyclonev.cyclonev_io_obuf(arch)#1# Loading cyclonev.cyclonev_io_ibuf(arch)#1# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#368# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#366# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#6# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#314# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#241# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#9# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#12# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#309# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#234# Loading altera.dffeas(vital_dffeas)#1# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#15# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#16# Loading altera.dffeas(vital_dffeas)#2# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#215# Loading altera.dffeas(vital_dffeas)#3# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#300# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#332# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#329# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#33# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#36# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#337# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#243# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#54# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#58# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#61# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#75# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#322# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#355# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#70# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#359# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#341# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#79# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#80# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#81# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#326# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#90# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#354# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#95# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#98# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#364# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#171# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#292# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#235# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#265# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#214# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#248# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#251# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#269# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#280# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#284# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#285# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#287# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#325# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#333# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#369
+# after#35
+# End time: 19:30:58 on Aug 21,2025, Elapsed time: 0:00:01# Errors: 0, Warnings: 0
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading /home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/Waveform2.vwf...
+
+Reading /home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim/MIC_1.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to /home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II/simulation/qsim/MIC_1_20250821193059.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

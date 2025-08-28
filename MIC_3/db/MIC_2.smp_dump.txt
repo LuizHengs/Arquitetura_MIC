@@ -1,0 +1,12 @@
+
+State Machine - |mic2_draw|ifu:ifu|st
+Name st.FINISH st.UPDATE_PC st.LATCH1 st.WAIT1 st.REQ1 st.LATCH0 st.WAIT0 st.REQ0 st.IDLE 
+st.IDLE 0 0 0 0 0 0 0 0 0 
+st.REQ0 0 0 0 0 0 0 0 1 1 
+st.WAIT0 0 0 0 0 0 0 1 0 1 
+st.LATCH0 0 0 0 0 0 1 0 0 1 
+st.REQ1 0 0 0 0 1 0 0 0 1 
+st.WAIT1 0 0 0 1 0 0 0 0 1 
+st.LATCH1 0 0 1 0 0 0 0 0 1 
+st.UPDATE_PC 0 1 0 0 0 0 0 0 1 
+st.FINISH 1 0 0 0 0 0 0 0 1 

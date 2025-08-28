@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity shifter is
+  port (
+    D     : in  signed(31 downto 0);
+    SLL8  : in  std_logic;              -- << 8 (lógico)
+    SRA1  : in  std_logic;              -- >> 1 (aritmético)
+    Q     : out signed(31 downto 0)
+  );
+end entity;
+
+architecture rtl of shifter is
+begin
+  assert not (SLL8='1' and SRA1='1')
+    report "Shifter: SLL8 and SRA1 asserted together." severity failure;
+
+  process(D, SLL8, SRA1)
+  begin
+    if SLL8='1' then
+      Q <= shift_left(D, 8);
+    elsif SRA1='1' then
+      Q <= D sra 1;
+    else
+      Q <= D;
+    end if;
+  end process;
+end architecture;

@@ -1,0 +1,841 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+ls
+# etch7886
+# gate_work
+# group_waves.do
+# MIC_1_run_msim_gate_vhdl.do
+# MIC_1_run_msim_gate_vhdl.do.bak
+# MIC_1_run_msim_gate_vhdl.do.bak1
+# MIC_1.sft
+# MIC_1.vho
+# modelsim.ini
+# msim_transcript
+# scan_bsel_mbrs.do
+# stim_mic1_gate.do
+# transcript
+# vsim.wlf
+# wlftAxhXMX
+do  MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 21:32:47 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 21:32:47 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# vsim -t ns work.mic1_draw 
+# Start time: 21:32:47 on Aug 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#1
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#4
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#5
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#6
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#8
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#9
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#11
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#12
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#13
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do =======
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# wave delete all
+# ** Error: No help for wave deletecursor available.
+# Executing ONERROR command at macro ./group_waves.do line 5
+# 
+# set TOP sim:/mic1_draw   ;# troque se o topo tiver outro nome
+# sim:/mic1_draw
+# 
+# Aparência opcional
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos por bit)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_H    $TOP/bsel_oh\(0\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_PC   $TOP/bsel_oh\(1\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_MDR  $TOP/bsel_oh\(2\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_MBRs $TOP/bsel_oh\(3\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_MBRu $TOP/bsel_oh\(4\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_SP   $TOP/bsel_oh\(5\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_LV   $TOP/bsel_oh\(6\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_CPP  $TOP/bsel_oh\(7\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_TOS  $TOP/bsel_oh\(8\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_OPC  $TOP/bsel_oh\(9\)
+# 
+# 4) Controles da ULA (Figura 4.2)
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0  $TOP/F1  $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória" (MBR/MDR)
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# (Opcional) se você tiver exposto A_H, Bbus, Cbus como pinos:
+# add wave -noupdate -group {BUSES} -radix hex $TOP/A_H
+# add wave -noupdate -group {BUSES} -radix hex $TOP/Bbus
+# add wave -noupdate -group {BUSES} -radix hex $TOP/Cbus
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# ===== fim =====
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_mic1_gate.do
+# ===== stim_check_mic1_gate.do (corrigido) =====
+# onerror {resume}
+# set TOP sim:/mic1_draw          ;# troque se o topo tiver outro nome
+# sim:/mic1_draw
+# 
+# tempos (sempre com unidades)
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# 
+# Clock
+# force -freeze $TOP/clk 0 0, 1 {$TH} -repeat {$T}
+# Invalid time value: $T
+# ** UI-Msg (Error): (vish-4004) The -repeat option requires a time period argument.
+# 
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+# Executing ONERROR command at macro ./stim_mic1_gate.do line 10
+# 
+# --------- helpers ---------
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# 
+# proc bsel_none {} {
+#   for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 }
+# }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# 
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# 
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     A_AND_B  {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_OR_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# --------- detectar Cbus no gate-level ---------
+# set HAVE_CBUS 0
+# 0
+# tente um pino/Net chamado Cprobe ou Cbus
+# set CANDS [concat \
+#   [find signals -r $TOP/*Cprobe*] \
+#   [find signals -r $TOP/*Cbus*] ]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# 
+# if {[llength $CANDS] > 0} {
+#   set CBUS [lindex $CANDS 0]
+#   set HAVE_CBUS 1
+# }
+# 1
+# 
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} {
+#     echo "SKIP (Cbus não visível): $msg"
+#     return
+#   }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [string tolower $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } \
+#   else          { echo "FAIL $msg -> got $v expected $e" }
+# }
+# 
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} {
+#     echo "PASS $msg (Z=$z N=$n)"
+#   } else {
+#     echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)"
+#   }
+# }
+# 
+# --------- reset ---------
+# clear_ctrl
+# force -deposit $TOP/rst 1
+# step 5
+# force -deposit $TOP/rst 0
+# step 1
+# 
+# 1) TOS <- 2 (MBRs)
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#00000002# "TOS <= 2 (MBRs)"
+# FAIL TOS <= 2 (MBRs) -> got 00000000 expected 16#00000002#
+# expect_flags 0 0 "TOS=2"
+# FAIL TOS=2 (Z=1 N=0) expected (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none
+# 
+# 2) MDR <- 3
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# 3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1
+# force -deposit $TOP/enH 0; bsel_none
+# 
+# 4) TOS <- H + MDR => 5
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#00000005# "H + MDR"
+# FAIL H + MDR -> got 00000000 expected 16#00000005#
+# expect_flags 0 0 "Resultado 5"
+# FAIL Resultado 5 (Z=1 N=0) expected (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none
+# 
+# 5) PC <- PC + 1
+# bsel PC; ula B_PLUS_1; force -deposit $TOP/enPC 1; step 1
+# expect_c 16#00000001# "PC + 1"
+# FAIL PC + 1 -> got 00000001 expected 16#00000001#
+# force -deposit $TOP/enPC 0; bsel_none
+# 
+# 6) SLL8 (TOS <<= 8)
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#00000500# "SLL8 (5 << 8)"
+# FAIL SLL8 (5 << 8) -> got 00000000 expected 16#00000500#
+# expect_flags 0 0 "SLL8 flags"
+# FAIL SLL8 flags (Z=1 N=0) expected (Z=0 N=0)
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/enTOS 0; bsel_none
+# 
+# 7) SRA1: -4 >> 1 => -2
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# force -deposit $TOP/enTOS 0; bsel_none
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#FFFFFFFE# "SRA1(-4)"
+# FAIL SRA1(-4) -> got 00000000 expected 16#fffffffe#
+# expect_flags 0 1 "SRA1 flags"
+# FAIL SRA1 flags (Z=1 N=0) expected (Z=0 N=1)
+# force -deposit $TOP/SRA1 0; force -deposit $TOP/enTOS 0; bsel_none
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 168 ns
+# echo ">> Testes concluídos."
+# >> Testes concluídos.
+# ===== fim =====
+# 
+# do scan_bsel_mbrs.do
+# ==== scan_bsel_mbrs.do ====
+# 
+# ==== scan_bsel_mbrs_with_clock.do ====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# --- clock 10 ns (50% duty) e reset ---
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# force -deposit $TOP/rst 1
+# run 40 ns
+# force -deposit $TOP/rst 0
+# run 10 ns
+# 
+# --- ULA em PASS_B e shifter neutro ---
+# force -deposit $TOP/F0 0
+# force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 0
+# force -deposit $TOP/ENB 1
+# force -deposit $TOP/INVA 0
+# force -deposit $TOP/INC 0
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# --- carrega MBR = 0x02 (byte) na borda do clock ---
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1
+# run 10 ns
+# force -deposit $TOP/FETCH 0
+# run 10 ns
+# 
+# helper: zera bsel_onehot
+# proc bsel_none {} {
+#   for {set i 0} {$i<10} {incr i} {
+#     force -deposit sim:/mic1_draw/bsel_oh($i) 0
+#   }
+# }
+# 
+# echo "---- varrendo bsel_oh com MBR=0x02 ----"
+# ---- varrendo bsel_oh com MBR=0x02 ----
+# for {set i 0} {$i<10} {incr i} {
+#   bsel_none
+#   force -deposit $TOP/bsel_oh($i) 1
+#   run 2 ns
+#   set bp [examine -radix hex $TOP/Bprobe]
+#   set z  [examine $TOP/Z]
+#   echo "bsel_oh($i)=1  -> Bprobe=$bp  Z=$z"
+# }
+# bsel_oh(0)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(1)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(2)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(3)=1  -> Bprobe=00000002  Z=1
+# bsel_oh(4)=1  -> Bprobe=00000002  Z=1
+# bsel_oh(5)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(6)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(7)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(8)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(9)=1  -> Bprobe=00000000  Z=1
+# bsel_none
+# echo "Dica: onde Bprobe != 0 (e Z=0) está sua fonte válida (MBRs/MBRu)."
+# Dica: onde Bprobe != 0 (e Z=0) está sua fonte válida (MBRs/MBRu).
+# 
+# 
+# Pré-requisitos: clock gerado; SLL8=SRA1=0; ULA em PASS_B
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# garante que MBR tenha 0x02
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; run 10 ns; force -deposit $TOP/FETCH 0
+# 
+# deixa shifter neutro e ULA PASS_B
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# force -deposit $TOP/F0 0; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 0; force -deposit $TOP/ENB 1
+# force -deposit $TOP/INVA 0; force -deposit $TOP/INC 0
+# 
+# varre bsel_oh e observa a flag Z (Z=0 => não-zero no B-bus)
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# echo "---- varrendo bsel_oh para localizar MBRs ----"
+# ---- varrendo bsel_oh para localizar MBRs ----
+# for {set i 0} {$i<10} {incr i} {
+#   bsel_none
+#   force -deposit $TOP/bsel_oh($i) 1
+#   run 1 ns
+#   set z [examine $TOP/Z]
+#   echo "bsel_oh($i)=1  -> Z=$z"
+# }
+# bsel_oh(0)=1  -> Z=1
+# bsel_oh(1)=1  -> Z=1
+# bsel_oh(2)=1  -> Z=1
+# bsel_oh(3)=1  -> Z=1
+# bsel_oh(4)=1  -> Z=1
+# bsel_oh(5)=1  -> Z=1
+# bsel_oh(6)=1  -> Z=1
+# bsel_oh(7)=1  -> Z=1
+# bsel_oh(8)=1  -> Z=1
+# bsel_oh(9)=1  -> Z=1
+# bsel_none
+# echo "Dica: o índice onde Z=0 (com MBR=2) é o MBRs."
+# Dica: o índice onde Z=0 (com MBR=2) é o MBRs.
+# 
+# ver se os sinais existem no topo
+# echo [find signals -r sim:/mic1_draw/*Bprobe*]
+# /mic1_draw/ww_Bprobe /mic1_draw/Bprobe
+# echo [find signals -r sim:/mic1_draw/*Cprobe*]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# 
+# colocar na wave (se o group_waves não já colocar)
+# add wave -radix hex sim:/mic1_draw/Bprobe
+# add wave -radix hex sim:/mic1_draw/Cprobe
+# 
+# 
+# run 2 us
+do  MIC_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is luizhengs@luizhengs-IdeaPad-3-15ALC6.
+# vlib gate_work
+# ** Warning: (vlib-34) Library already exists at "gate_work".
+# Errors: 0, Warnings: 1
+# vmap work gate_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {MIC_1.vho}
+# Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 21:37:25 on Aug 23,2025
+# vcom -reportprogress 300 -93 -work work MIC_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mic1_draw
+# -- Compiling architecture structure of mic1_draw
+# End time: 21:37:25 on Aug 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# End time: 21:37:25 on Aug 23,2025, Elapsed time: 0:04:38
+# Errors: 1, Warnings: 0
+# vsim -t ns work.mic1_draw 
+# Start time: 21:37:26 on Aug 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mic1_draw(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)#1
+# Loading cyclonev.cyclonev_io_ibuf(arch)#1
+# Loading altera.dffeas(vital_dffeas)#1
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#1
+# Loading altera.dffeas(vital_dffeas)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#2
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#4
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#5
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#6
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#7
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#8
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#9
+# Loading altera.dffeas(vital_dffeas)#3
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#10
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#11
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#12
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#13
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+# 
+# (2) (opcional) agrupar as ondas
+# do group_waves.do
+# ======= group_waves.do =======
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# wave delete all
+# ** Error: No help for wave deletecursor available.
+# Executing ONERROR command at macro ./group_waves.do line 5
+# 
+# set TOP sim:/mic1_draw   ;# troque se o topo tiver outro nome
+# sim:/mic1_draw
+# 
+# Aparência opcional
+# configure wave -namecolwidth 260
+# configure wave -valuecolwidth 120
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -timelineunits ns
+# 
+# 1) Clock e Reset
+# add wave -noupdate -group {CLK_RST} $TOP/clk
+# add wave -noupdate -group {CLK_RST} $TOP/rst
+# 
+# 2) Enables (escrita no C-bus)
+# add wave -noupdate -group {EN_writeC} $TOP/enH $TOP/enOPC $TOP/enTOS $TOP/enCPP \
+#                                    $TOP/enLV $TOP/enSP  $TOP/enPC  $TOP/enMDR $TOP/enMAR
+# 
+# 3) BSEL one-hot (com rótulos por bit)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_H    $TOP/bsel_oh\(0\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_PC   $TOP/bsel_oh\(1\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_MDR  $TOP/bsel_oh\(2\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_MBRs $TOP/bsel_oh\(3\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_MBRu $TOP/bsel_oh\(4\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_SP   $TOP/bsel_oh\(5\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_LV   $TOP/bsel_oh\(6\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_CPP  $TOP/bsel_oh\(7\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_TOS  $TOP/bsel_oh\(8\)
+# add wave -noupdate -group {BSEL_onehot} -radix binary -label B_OPC  $TOP/bsel_oh\(9\)
+# 
+# 4) Controles da ULA (Figura 4.2)
+# add wave -noupdate -group {ULA_ctrl} $TOP/F0  $TOP/F1  $TOP/ENA $TOP/ENB $TOP/INVA $TOP/INC
+# 
+# 5) Shifter
+# add wave -noupdate -group {SHIFTER} $TOP/SLL8 $TOP/SRA1
+# 
+# 6) Interface "memória" (MBR/MDR)
+# add wave -noupdate -group {MEM_IF} $TOP/FETCH $TOP/READ
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MBR_in
+# add wave -noupdate -group {MEM_IF} -radix hex $TOP/MDR_in
+# 
+# 7) Flags
+# add wave -noupdate -group {FLAGS} $TOP/Z $TOP/N
+# 
+# (Opcional) se você tiver exposto A_H, Bbus, Cbus como pinos:
+# add wave -noupdate -group {BUSES} -radix hex $TOP/A_H
+# add wave -noupdate -group {BUSES} -radix hex $TOP/Bbus
+# add wave -noupdate -group {BUSES} -radix hex $TOP/Cbus
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 837 ns
+# ===== fim =====
+# 
+# 
+# (3) aplicar os estímulos (2+3, PC+1, SLL8, SRA1&)
+# do stim_mic1_gate.do
+# ===== stim_check_mic1_gate.do (corrigido) =====
+# onerror {resume}
+# set TOP sim:/mic1_draw          ;# troque se o topo tiver outro nome
+# sim:/mic1_draw
+# 
+# tempos (sempre com unidades)
+# set T  "10 ns"
+# 10 ns
+# set TH "5 ns"
+# 5 ns
+# 
+# Clock
+# force -freeze $TOP/clk 0 0, 1 {$TH} -repeat {$T}
+# Invalid time value: $T
+# ** UI-Msg (Error): (vish-4004) The -repeat option requires a time period argument.
+# 
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+# Executing ONERROR command at macro ./stim_mic1_gate.do line 10
+# 
+# --------- helpers ---------
+# proc step {n} { for {set i 0} {$i<$n} {incr i} { run $::T } }
+# 
+# proc bsel_none {} {
+#   for {set i 0} {$i<10} {incr i} { force -deposit $::TOP/bsel_oh($i) 0 }
+# }
+# proc bsel {src} {
+#   array set IDX {H 0 PC 1 MDR 2 MBRs 3 MBRu 4 SP 5 LV 6 CPP 7 TOS 8 OPC 9}
+#   if {![info exists IDX($src)]} { echo "bsel: fonte '$src' inválida"; return }
+#   bsel_none
+#   force -deposit $::TOP/bsel_oh($IDX($src)) 1
+# }
+# 
+# proc clear_ctrl {} {
+#   foreach s {enH enOPC enTOS enCPP enLV enSP enPC enMDR enMAR F0 F1 ENA ENB INVA INC SLL8 SRA1 FETCH READ} {
+#     force -deposit $::TOP/$s 0
+#   }
+#   bsel_none
+# }
+# 
+# proc ula {mode} {
+#   switch -exact -- $mode {
+#     PASS_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_PLUS_B {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     B_PLUS_1 {force -deposit $::TOP/F0 1; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 0; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 1}
+#     A_AND_B  {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 0; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#     A_OR_B   {force -deposit $::TOP/F0 0; force -deposit $::TOP/F1 1; force -deposit $::TOP/ENA 1; force -deposit $::TOP/ENB 1; force -deposit $::TOP/INVA 0; force -deposit $::TOP/INC 0}
+#   }
+# }
+# 
+# --------- detectar Cbus no gate-level ---------
+# set HAVE_CBUS 0
+# 0
+# tente um pino/Net chamado Cprobe ou Cbus
+# set CANDS [concat \
+#   [find signals -r $TOP/*Cprobe*] \
+#   [find signals -r $TOP/*Cbus*] ]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# 
+# if {[llength $CANDS] > 0} {
+#   set CBUS [lindex $CANDS 0]
+#   set HAVE_CBUS 1
+# }
+# 1
+# 
+# proc expect_c {hex msg} {
+#   if {!$::HAVE_CBUS} {
+#     echo "SKIP (Cbus não visível): $msg"
+#     return
+#   }
+#   set v [string tolower [examine -radix hex $::CBUS]]
+#   set e [string tolower $hex]
+#   if {$v eq $e} { echo "PASS $msg -> C=$v" } \
+#   else          { echo "FAIL $msg -> got $v expected $e" }
+# }
+# 
+# proc expect_flags {zexp nexp msg} {
+#   set z [examine $::TOP/Z]; set n [examine $::TOP/N]
+#   if {$z eq $zexp && $n eq $nexp} {
+#     echo "PASS $msg (Z=$z N=$n)"
+#   } else {
+#     echo "FAIL $msg (Z=$z N=$n) expected (Z=$zexp N=$nexp)"
+#   }
+# }
+# 
+# --------- reset ---------
+# clear_ctrl
+# force -deposit $TOP/rst 1
+# step 5
+# force -deposit $TOP/rst 0
+# step 1
+# 
+# 1) TOS <- 2 (MBRs)
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; step 1; force -deposit $TOP/FETCH 0
+# bsel MBRs; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#00000002# "TOS <= 2 (MBRs)"
+# FAIL TOS <= 2 (MBRs) -> got 00000000 expected 16#00000002#
+# expect_flags 0 0 "TOS=2"
+# FAIL TOS=2 (Z=1 N=0) expected (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none
+# 
+# 2) MDR <- 3
+# force -deposit $TOP/MDR_in 16#00000003#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# 
+# 3) H <- TOS
+# bsel TOS; ula PASS_B; force -deposit $TOP/enH 1; step 1
+# force -deposit $TOP/enH 0; bsel_none
+# 
+# 4) TOS <- H + MDR => 5
+# bsel MDR; ula A_PLUS_B; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#00000005# "H + MDR"
+# FAIL H + MDR -> got 00000000 expected 16#00000005#
+# expect_flags 0 0 "Resultado 5"
+# FAIL Resultado 5 (Z=1 N=0) expected (Z=0 N=0)
+# force -deposit $TOP/enTOS 0; bsel_none
+# 
+# 5) PC <- PC + 1
+# bsel PC; ula B_PLUS_1; force -deposit $TOP/enPC 1; step 1
+# expect_c 16#00000001# "PC + 1"
+# FAIL PC + 1 -> got 00000001 expected 16#00000001#
+# force -deposit $TOP/enPC 0; bsel_none
+# 
+# 6) SLL8 (TOS <<= 8)
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SLL8 1; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#00000500# "SLL8 (5 << 8)"
+# FAIL SLL8 (5 << 8) -> got 00000000 expected 16#00000500#
+# expect_flags 0 0 "SLL8 flags"
+# FAIL SLL8 flags (Z=1 N=0) expected (Z=0 N=0)
+# force -deposit $TOP/SLL8 0; force -deposit $TOP/enTOS 0; bsel_none
+# 
+# 7) SRA1: -4 >> 1 => -2
+# force -deposit $TOP/MDR_in 16#FFFFFFFC#
+# force -deposit $TOP/READ 1; step 1; force -deposit $TOP/READ 0
+# bsel MDR; ula PASS_B; force -deposit $TOP/enTOS 1; step 1
+# force -deposit $TOP/enTOS 0; bsel_none
+# bsel TOS; ula PASS_B
+# force -deposit $TOP/SRA1 1; force -deposit $TOP/enTOS 1; step 1
+# expect_c 16#FFFFFFFE# "SRA1(-4)"
+# FAIL SRA1(-4) -> got 00000000 expected 16#fffffffe#
+# expect_flags 0 1 "SRA1 flags"
+# FAIL SRA1 flags (Z=1 N=0) expected (Z=0 N=1)
+# force -deposit $TOP/SRA1 0; force -deposit $TOP/enTOS 0; bsel_none
+# 
+# update
+# wave zoomfull
+# 0 ns
+# 168 ns
+# echo ">> Testes concluídos."
+# >> Testes concluídos.
+# ===== fim =====
+# 
+# do scan_bsel_mbrs.do
+# ==== scan_bsel_mbrs.do ====
+# 
+# ==== scan_bsel_mbrs_with_clock.do ====
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# 
+# --- clock 10 ns (50% duty) e reset ---
+# force -freeze $TOP/clk 0 0, 1 {5 ns} -repeat {10 ns}
+# force -deposit $TOP/rst 1
+# run 40 ns
+# force -deposit $TOP/rst 0
+# run 10 ns
+# 
+# --- ULA em PASS_B e shifter neutro ---
+# force -deposit $TOP/F0 0
+# force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 0
+# force -deposit $TOP/ENB 1
+# force -deposit $TOP/INVA 0
+# force -deposit $TOP/INC 0
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# 
+# --- carrega MBR = 0x02 (byte) na borda do clock ---
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1
+# run 10 ns
+# force -deposit $TOP/FETCH 0
+# run 10 ns
+# 
+# helper: zera bsel_onehot
+# proc bsel_none {} {
+#   for {set i 0} {$i<10} {incr i} {
+#     force -deposit sim:/mic1_draw/bsel_oh($i) 0
+#   }
+# }
+# 
+# echo "---- varrendo bsel_oh com MBR=0x02 ----"
+# ---- varrendo bsel_oh com MBR=0x02 ----
+# for {set i 0} {$i<10} {incr i} {
+#   bsel_none
+#   force -deposit $TOP/bsel_oh($i) 1
+#   run 2 ns
+#   set bp [examine -radix hex $TOP/Bprobe]
+#   set z  [examine $TOP/Z]
+#   echo "bsel_oh($i)=1  -> Bprobe=$bp  Z=$z"
+# }
+# bsel_oh(0)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(1)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(2)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(3)=1  -> Bprobe=00000002  Z=1
+# bsel_oh(4)=1  -> Bprobe=00000002  Z=1
+# bsel_oh(5)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(6)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(7)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(8)=1  -> Bprobe=00000000  Z=1
+# bsel_oh(9)=1  -> Bprobe=00000000  Z=1
+# bsel_none
+# echo "Dica: onde Bprobe != 0 (e Z=0) está sua fonte válida (MBRs/MBRu)."
+# Dica: onde Bprobe != 0 (e Z=0) está sua fonte válida (MBRs/MBRu).
+# 
+# 
+# Pré-requisitos: clock gerado; SLL8=SRA1=0; ULA em PASS_B
+# onerror {resume}
+# set TOP sim:/mic1_draw
+# sim:/mic1_draw
+# garante que MBR tenha 0x02
+# force -deposit $TOP/MBR_in 16#02#
+# force -deposit $TOP/FETCH 1; run 10 ns; force -deposit $TOP/FETCH 0
+# 
+# deixa shifter neutro e ULA PASS_B
+# force -deposit $TOP/SLL8 0
+# force -deposit $TOP/SRA1 0
+# force -deposit $TOP/F0 0; force -deposit $TOP/F1 1
+# force -deposit $TOP/ENA 0; force -deposit $TOP/ENB 1
+# force -deposit $TOP/INVA 0; force -deposit $TOP/INC 0
+# 
+# varre bsel_oh e observa a flag Z (Z=0 => não-zero no B-bus)
+# proc bsel_none {} { for {set i 0} {$i<10} {incr i} { force -deposit sim:/mic1_draw/bsel_oh($i) 0 } }
+# echo "---- varrendo bsel_oh para localizar MBRs ----"
+# ---- varrendo bsel_oh para localizar MBRs ----
+# for {set i 0} {$i<10} {incr i} {
+#   bsel_none
+#   force -deposit $TOP/bsel_oh($i) 1
+#   run 1 ns
+#   set z [examine $TOP/Z]
+#   echo "bsel_oh($i)=1  -> Z=$z"
+# }
+# bsel_oh(0)=1  -> Z=1
+# bsel_oh(1)=1  -> Z=1
+# bsel_oh(2)=1  -> Z=1
+# bsel_oh(3)=1  -> Z=1
+# bsel_oh(4)=1  -> Z=1
+# bsel_oh(5)=1  -> Z=1
+# bsel_oh(6)=1  -> Z=1
+# bsel_oh(7)=1  -> Z=1
+# bsel_oh(8)=1  -> Z=1
+# bsel_oh(9)=1  -> Z=1
+# bsel_none
+# echo "Dica: o índice onde Z=0 (com MBR=2) é o MBRs."
+# Dica: o índice onde Z=0 (com MBR=2) é o MBRs.
+# 
+# ver se os sinais existem no topo
+# echo [find signals -r sim:/mic1_draw/*Bprobe*]
+# /mic1_draw/ww_Bprobe /mic1_draw/Bprobe
+# echo [find signals -r sim:/mic1_draw/*Cprobe*]
+# /mic1_draw/Cprobe /mic1_draw/ww_Cprobe
+# 
+# colocar na wave (se o group_waves não já colocar)
+# add wave -radix hex sim:/mic1_draw/Bprobe
+# add wave -radix hex sim:/mic1_draw/Cprobe
+# 
+# 
+# run 2 us
+# End time: 21:50:38 on Aug 23,2025, Elapsed time: 0:13:12
+# Errors: 1, Warnings: 0

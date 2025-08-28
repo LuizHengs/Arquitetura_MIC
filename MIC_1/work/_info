@@ -1,0 +1,326 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/luizhengs/Documentos/UFPB/7_Periodo/Arquitetura_II
+T_opt
+!s110 1755815318
+V3^jh`cOS=JoWf@dI4C0oe2
+04 16 3 work tb_mic1_datapath sim 1
+=1-000ae431a4f1-68a79d96-c47ce-8ade
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U4 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+R2
+Emic1_datapath
+Z3 w1755813473
+Z4 DPx4 work 8 mic1_pkg 0 22 D]Hha?Qi?WaO]4S]in3Cf3
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 39
+R2
+Z8 8mic1_datapath.vhd
+Z9 Fmic1_datapath.vhd
+l0
+L6 1
+V[GP[mlDdkE[BJg]ECHFgL2
+!s100 =5B<Qh>9M6TLHP9`bU6UK1
+Z10 OL;C;2024.3;79
+33
+Z11 !s110 1755815673
+!i10b 1
+Z12 !s108 1755815673.000000
+Z13 !s90 -reportprogress|300|-2008|mic1_pkg.vhd|ula.vhd|shifter.vhd|mic1_regs_core.vhd|mic1_datapath.vhd|
+!s107 mic1_datapath.vhd|mic1_regs_core.vhd|shifter.vhd|ula.vhd|mic1_pkg.vhd|
+!i113 0
+Z14 o-2008
+Z15 tExplicit 1 CvgOpt 0
+Astructural
+R4
+R5
+R6
+R7
+Z16 DEx4 work 13 mic1_datapath 0 22 [GP[mlDdkE[BJg]ECHFgL2
+!i122 39
+l99
+Z17 L40 115
+Z18 VE8KOFQTWNIT@CE@j?J=5=2
+Z19 !s100 hFSeR6kl>nC`bCZQNeYj:2
+R10
+33
+R11
+!i10b 1
+R12
+R13
+Z20 !s107 mic1_datapath.vhd|mic1_regs_core.vhd|shifter.vhd|ula.vhd|mic1_pkg.vhd|
+!i113 0
+R14
+R15
+Artl
+DEx4 work 7 shifter 0 22 bBBdoo;b_Nck^TU<3jlKc3
+Z21 DEx4 work 3 ula 0 22 D8CZ]ER@SzigHNXemGjPD1
+DPx4 work 8 mic1_pkg 0 22 oiHQMQIVL^<o;6`;33Mi50
+R5
+R6
+R7
+DEx4 work 13 mic1_datapath 0 22 :RnGJW6K<=9cTk58Cmo9=3
+!i122 33
+l51
+L38 99
+VV:7PDG:AN=Y3^2E^d3a<z2
+!s100 IChG0mJ]f=n;NTiM<aH<12
+R10
+33
+!s110 1755809774
+!i10b 1
+!s108 1755809774.000000
+!s90 -reportprogress|300|-2008|mic1_datapath.vhd|
+!s107 mic1_datapath.vhd|
+!i113 0
+R14
+R15
+w1755805604
+Pmic1_pkg
+R5
+R6
+R7
+!i122 39
+Z22 w1755812941
+R2
+Z23 8mic1_pkg.vhd
+Z24 Fmic1_pkg.vhd
+l0
+L5 33
+VD]Hha?Qi?WaO]4S]in3Cf3
+!s100 hhT>=HoBQUB44HDAS=>m?1
+R10
+33
+b1
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15
+Bbody
+R4
+R5
+R6
+R7
+!i122 39
+l0
+Z25 L39 22
+Z26 VFb8GeI6TaDgJ2D9PY3Bmi2
+Z27 !s100 ]h6O6dYkQnQAh3@zCa?WZ0
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15
+Emic1_regs_core
+Z28 w1755814448
+R4
+R5
+R6
+R7
+!i122 39
+R2
+Z29 8mic1_regs_core.vhd
+Z30 Fmic1_regs_core.vhd
+l0
+L7 1
+V8h[n>0M;k@TMLV7UVWQ7J3
+!s100 CFN1z`6GXSY<e?=2FaI3m1
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15
+Artl
+R4
+R5
+R6
+R7
+Z31 DEx4 work 14 mic1_regs_core 0 22 8h[n>0M;k@TMLV7UVWQ7J3
+!i122 39
+l38
+Z32 L30 55
+Z33 Vc@mUQHaQdjA:n08mdej9]0
+Z34 !s100 M2IYX=Wea3K4GTWTGn;No2
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15
+Eshifter
+Z35 w1755813034
+R5
+R6
+R7
+!i122 39
+R2
+Z36 8shifter.vhd
+Z37 Fshifter.vhd
+l0
+L5 1
+V?DFi;YdA`Bj6`BOSY<LG>0
+!s100 0G^>hP@WnN[B;WRn7Nb0C3
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15
+Artl
+R5
+R6
+R7
+Z38 DEx4 work 7 shifter 0 22 ?DFi;YdA`Bj6`BOSY<LG>0
+!i122 39
+l18
+Z39 L16 21
+Z40 V>Y^7Ug8dBWdh3Qf_Ecfni1
+Z41 !s100 R18XV@XOl<_=BD[EeRin=2
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15
+Etb_mic1_datapath
+Z42 w1755814168
+R4
+R5
+R6
+R7
+!i122 37
+R2
+Z43 8tb_mic1_datapath.vhd
+Z44 Ftb_mic1_datapath.vhd
+l0
+L6 1
+VadF3CoQZ67cPbVb<@mjVi1
+!s100 I;hST3B5TVdkf6ec9^go61
+R10
+33
+Z45 !s110 1755815635
+!i10b 1
+Z46 !s108 1755815635.000000
+Z47 !s90 -reportprogress|300|-2008|mic1_pkg.vhd|ula.vhd|shifter.vhd|mic1_regs_core.vhd|tb_mic1_datapath.vhd|
+Z48 !s107 tb_mic1_datapath.vhd|mic1_regs_core.vhd|shifter.vhd|ula.vhd|mic1_pkg.vhd|
+!i113 0
+R14
+R15
+Asim
+R16
+R4
+R5
+R6
+R7
+DEx4 work 16 tb_mic1_datapath 0 22 adF3CoQZ67cPbVb<@mjVi1
+!i122 37
+l95
+L9 274
+V`hVK^MQ`a`OoNR3DBZ?Z91
+!s100 oPSMQiCZzRIL:O5IG@7CZ2
+R10
+33
+R45
+!i10b 1
+R46
+R47
+R48
+!i113 0
+R14
+R15
+Eula
+Z49 w1755809902
+R5
+R6
+R7
+!i122 39
+R2
+Z50 8ula.vhd
+Z51 Fula.vhd
+l0
+L5 1
+VD8CZ]ER@SzigHNXemGjPD1
+!s100 C;VMA5?F8:hn2_Z8CYDlf0
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15
+Artl
+R5
+R6
+R7
+R21
+!i122 39
+l25
+Z52 L15 42
+Z53 V`LlYO82<A1Z7dlfGi?kK93
+Z54 !s100 U3hX8>3NK8L[L8z=J2SBJ3
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R20
+!i113 0
+R14
+R15

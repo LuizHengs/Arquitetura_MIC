@@ -1,0 +1,180 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  /opt/intelFPGA_lite/24.1std/quartus/linux64/
+Quartus sim root      :  /opt/intelFPGA_lite/24.1std/quartus/eda/sim_lib
+Simulation Tool       :  questa intel fpga
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  MIC_2.vho
+Sim SDF file          :  MIC_2__vhdl.sdo
+Sim dir               :  simulation/questa
+
+=======================================================
+
+Info: Starting NativeLink simulation with Questa Intel FPGA software
+Sourced NativeLink script /opt/intelFPGA_lite/24.1std/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File MIC_2_run_msim_gate_vhdl.do already exists - backing up current file as MIC_2_run_msim_gate_vhdl.do.bak3
+Probing transcript
+Questa Intel FPGA Info: # //  Questa Intel Starter FPGA Edition-64
+Questa Intel FPGA Info: # //  Version 2024.3 linux_x86_64 Sep 10 2024
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # // Unpublished work. Copyright 2024 Siemens
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # // This material contains trade secrets or otherwise confidential information
+Questa Intel FPGA Info: # // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+Questa Intel FPGA Info: # // "SISW"), or its licensors. Access to and use of this information is strictly
+Questa Intel FPGA Info: # // limited as set forth in the Customer's applicable agreements with SISW.
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # // This material may not be copied, distributed, or otherwise disclosed outside
+Questa Intel FPGA Info: # // of the Customer's facilities without the express written permission of SISW,
+Questa Intel FPGA Info: # // and may not be used in any way not expressly authorized by SISW.
+Questa Intel FPGA Info: # //
+Questa Intel FPGA Info: # do MIC_2_run_msim_gate_vhdl.do
+Questa Intel FPGA Info: # if {[file exists gate_work]} {
+Questa Intel FPGA Info: # 	vdel -lib gate_work -all
+Questa Intel FPGA Info: # }
+Questa Intel FPGA Info: # vlib gate_work
+Questa Intel FPGA Info: # vmap work gate_work
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+Questa Intel FPGA Info: # vmap work gate_work 
+Questa Intel FPGA Info: # Copying /opt/intelFPGA_lite/24.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+Questa Intel FPGA Info: # Modifying modelsim.ini
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vcom -93 -work work {MIC_2.vho}
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+Questa Intel FPGA Info: # Start time: 01:00:30 on Aug 28,2025
+Questa Intel FPGA Info: # vcom -reportprogress 300 -93 -work work MIC_2.vho 
+Questa Intel FPGA Info: # -- Loading package STANDARD
+Questa Intel FPGA Info: # -- Loading package TEXTIO
+Questa Intel FPGA Info: # -- Loading package std_logic_1164
+Questa Intel FPGA Info: # -- Loading package VITAL_Timing
+Questa Intel FPGA Info: # -- Loading package VITAL_Primitives
+Questa Intel FPGA Info: # -- Loading package dffeas_pack
+Questa Intel FPGA Info: # -- Loading package altera_primitives_components
+Questa Intel FPGA Info: # -- Loading package altera_lnsim_components
+Questa Intel FPGA Info: # -- Loading package cyclonev_atom_pack
+Questa Intel FPGA Info: # -- Loading package cyclonev_components
+Questa Intel FPGA Info: # -- Compiling entity mic2_draw
+Questa Intel FPGA Info: # -- Compiling architecture structure of mic2_draw
+Questa Intel FPGA Info: # End time: 01:00:31 on Aug 28,2025, Elapsed time: 0:00:01
+Questa Intel FPGA Info: # Errors: 0, Warnings: 0
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: do MIC_2_run_msim_gate_vhdl.do
+Questa Intel FPGA Info: # if {[file exists gate_work]} {
+Questa Intel FPGA Info: # 	vdel -lib gate_work -all
+Questa Intel FPGA Info: # }
+Questa Intel FPGA Info: # vlib gate_work
+Questa Intel FPGA Info: # vmap work gate_work
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+Questa Intel FPGA Info: # vmap work gate_work 
+Questa Intel FPGA Info: # Modifying modelsim.ini
+Questa Intel FPGA Info: # 
+Questa Intel FPGA Info: # vcom -93 -work work {MIC_2.vho}
+Questa Intel FPGA Info: # Questa Intel Starter FPGA Edition-64 vcom 2024.3 Compiler 2024.09 Sep 10 2024
+Questa Intel FPGA Info: # Start time: 01:01:25 on Aug 28,2025
+Questa Intel FPGA Info: # vcom -reportprogress 300 -93 -work work MIC_2.vho 
+Questa Intel FPGA Info: # -- Loading package STANDARD
+Questa Intel FPGA Info: # -- Loading package TEXTIO
+Questa Intel FPGA Info: # -- Loading package std_logic_1164
+Questa Intel FPGA Info: # -- Loading package VITAL_Timing
+Questa Intel FPGA Info: # -- Loading package VITAL_Primitives
+Questa Intel FPGA Info: # -- Loading package dffeas_pack
+Questa Intel FPGA Info: # -- Loading package altera_primitives_components
+Questa Intel FPGA Info: # -- Loading package altera_lnsim_components
+Questa Intel FPGA Info: # -- Loading package cyclonev_atom_pack
+Questa Intel FPGA Info: # -- Loading package cyclonev_components
+Questa Intel FPGA Info: # -- Compiling entity mic2_draw
+Questa Intel FPGA Info: # -- Compiling architecture structure of mic2_draw
+Questa Intel FPGA Info: # End time: 01:01:25 on Aug 28,2025, Elapsed time: 0:00:00
+Questa Intel FPGA Info: # Errors: 0, Warnings: 0
+Questa Intel FPGA Info: # vsim -t ns work.mic2_draw 
+Questa Intel FPGA Info: # vsim -t ns work.mic2_draw 
+Questa Intel FPGA Info: # Start time: 01:01:25 on Aug 28,2025
+Questa Intel FPGA Info: # ** Note: (vsim-3812) Design is being optimized...
+Questa Intel FPGA Info: # Loading std.standard
+Questa Intel FPGA Info: # Loading std.textio(body)
+Questa Intel FPGA Info: # Loading ieee.std_logic_1164(body)
+Questa Intel FPGA Info: # Loading ieee.vital_timing(body)
+Questa Intel FPGA Info: # Loading ieee.vital_primitives(body)
+Questa Intel FPGA Info: # Loading altera.dffeas_pack
+Questa Intel FPGA Info: # Loading altera.altera_primitives_components
+Questa Intel FPGA Info: # Loading altera_lnsim.altera_lnsim_components
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_atom_pack(body)
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_components
+Questa Intel FPGA Info: # Loading work.mic2_draw(structure)#1
+Questa Intel FPGA Info: # Loading ieee.std_logic_arith(body)
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_io_obuf(arch)#1
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_io_ibuf(arch)#1
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#356
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#2
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#318
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#361
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#11
+Questa Intel FPGA Info: # Loading altera.dffeas(vital_dffeas)#1
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#173
+Questa Intel FPGA Info: # Loading altera.dffeas(vital_dffeas)#2
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#103
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#14
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#184
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#367
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#17
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#373
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#25
+Questa Intel FPGA Info: # Loading altera.dffeas(vital_dffeas)#3
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#301
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#366
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#209
+Questa Intel FPGA Info: # Loading altera.dffeas(vital_dffeas)#4
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#24
+Questa Intel FPGA Info: # Loading altera.dffeas(vital_dffeas)#5
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#351
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#28
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#30
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#354
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#157
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#360
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#43
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#44
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#77
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#51
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#128
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#85
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#308
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#129
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#341
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#327
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#76
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#78
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#369
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#102
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#93
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#100
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#104
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#315
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#111
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#119
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#357
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#208
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#249
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#226
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#323
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#257
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#258
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#289
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#371
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#295
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#296
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#370
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#362
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#363
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#368
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#372
+Questa Intel FPGA Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)#374
+Questa Intel FPGA Info: # End time: 01:05:31 on Aug 28,2025, Elapsed time: 0:04:06
+Questa Intel FPGA Info: # Errors: 0, Warnings: 0
+Info: NativeLink simulation flow was successful
